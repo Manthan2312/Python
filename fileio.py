@@ -61,14 +61,21 @@
 # with open('test1.txt','a') as f:
 #   f.write("mANTHAN_RUST\n")
   
-with open("test1.txt",'r') as m:
-    # print(m.read()) print from the file data 
+# with open("test1.txt",'r') as m:
+#     # print(m.read()) print from the file data 
 
-    m.seek(10) 
-    # seek function do the skip the number of the words you entered in the brackets
+#     m.seek(10) 
+#     # seek function do the skip the number of the words you entered in the brackets
    
-    print(m.tell())
-    # tell function call print the where you are in the file which number of character you point right now
+#     print(m.tell())
+#     # tell function call print the where you are in the file which number of character you point right now
 
-    
-    print(m.read())
+
+#     print(m.read())
+
+with open("text1.txt",'w') as k:
+    k.write("Hello From The Manthan\n")
+    k.truncate(10)     #the truncate function do write a that bytes in the file you defined in the brackets
+
+with open("text1.txt",'r') as r:
+    print(r.read())
