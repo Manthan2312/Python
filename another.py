@@ -1,0 +1,5 @@
+import myscript
+
+
+myscript.saymyname()
+
