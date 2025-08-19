@@ -50,7 +50,3 @@ def function_oe(x):
         print("note this is after return")
 
 print(function_oe(2))
-
-
-
-
