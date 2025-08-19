@@ -73,9 +73,27 @@
 
 #     print(m.read())
 
-with open("text1.txt",'w') as k:
-    k.write("Hello From The Manthan\n")
-    k.truncate(10)     #the truncate function do write a that bytes in the file you defined in the brackets
+# with open("text1.txt",'w') as k:
+#     k.write("Hello From The Manthan\n")
+#     k.truncate(10)     #the truncate function do write a that bytes in the file you defined in the brackets
 
-with open("text1.txt",'r') as r:
-    print(r.read())
+# with open("text1.txt",'r') as r:
+#     print(r.read())
+
+# f = open("example.txt", "r")
+# print("Initial position:", f.tell())   # → usually 0 (beginning of file)
+
+# print(f.read(5))  # read 5 characters
+
+# print("After reading 5 chars, position:", f.tell())
+
+# f.close()
+
+
+
+# import os
+# os.remove("example.txt") 
+#IF YOU WANT TO DELETE ANY FILE FROM THE COMPUTER USE THE OS MODULE WITH IT REMOVE FUCNTION 
+
+
+
