@@ -1,4 +1,4 @@
-# Find the second largest number in a list (without using max() twice).
+# # Find the second largest number in a list (without using max() twice).
 # number_list=[11,411,432,717,84]
 # number_list.sort()
 # print(number_list[len(number_list)-2])
@@ -40,3 +40,30 @@
 
 
 
+
+
+# 👉 Find all pairs in a list whose sum is equal to a given target.
+
+numbers = [2, 4, 4, 1, 5, 1]
+target = 6
+
+# pairs = set()
+
+# for i in range(len(numbers)):
+#     for j in range(i+1, len(numbers)):
+#         if numbers[i] + numbers[j] == target:
+#             pairs.add(tuple(sorted((numbers[i], numbers[j]))))
+
+# print(pairs)
+
+i=0
+
+pairs = set()
+while(i<len(numbers)-1):
+    if numbers[i]+numbers[i+1]==target:
+        # print((numbers[i],numbers[i+1]))
+        pairs.add(tuple(sorted((numbers[i], numbers[i+1]))))
+    i+=1
+
+print(pairs)
+        
