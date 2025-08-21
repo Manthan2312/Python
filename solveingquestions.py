@@ -58,12 +58,24 @@ target = 6
 
 i=0
 
-pairs = set()
-while(i<len(numbers)-1):
-    if numbers[i]+numbers[i+1]==target:
-        # print((numbers[i],numbers[i+1]))
-        pairs.add(tuple(sorted((numbers[i], numbers[i+1]))))
-    i+=1
+# pairs = set()
+# while(i<len(numbers)-1):
+#     if numbers[i]+numbers[i+1]==target:
+#         # print((numbers[i],numbers[i+1]))
+#         pairs.add(tuple(sorted((numbers[i], numbers[i+1]))))
+#     i+=1
 
-print(pairs)
+# print(pairs)
         
+
+# 👉 Check if a string is a palindrome.
+
+example_str="Manthan"
+example_str=example_str.lower()
+print(example_str)
+
+re_example = "".join(reversed(example_str))
+print(re_example)
+print("Palindrome" if example_str == re_example else "Not a palindrome")
+
+
