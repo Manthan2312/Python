@@ -80,10 +80,16 @@
 for i in range(1,11):
     print(i)
     if i==5:
-        break;
+        break
 else:
     print("Loop is over")    # IF THE LOOP IS WORK BEGINNING TO END THAT TIME ELSE BLOCK EXCUTED OTHWERWISE 
     #ELSE LOOP BREAK THAT TIME IT IS DOES NOT WORK OR EXCUTED THE ELSE BLOCK
 
 
     
+
+new_di={"Name":"Manthan",
+        "Age":20,
+        "Rollno":2252}
+
+print(new_di.get("Name"))
