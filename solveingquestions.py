@@ -177,26 +177,195 @@
 
 # Find the largest element in a list without using max().
 
-Input = [3, 7, 2, 9, 5]
-maxn=Input[0]
+# Input = [3, 7, 2, 9, 5]
+# maxn=Input[0]
 
-for i in Input:
+# for i in Input:
     
-    if i>maxn:
-        maxn=i
+#     if i>maxn:
+#         maxn=i
 
 
-print(maxn)
+# print(maxn)
 
 
-Input = [3, 7, 2, 9, 5]
-maxn = Input[0]
-index = 0
+# Input = [3, 7, 2, 9, 5]
+# maxn = Input[0]
+# index = 0
 
-for i in range(len(Input)):
-    if Input[i] > maxn:
-        maxn = Input[i]
-        index = i
+# for i in range(len(Input)):
+#     if Input[i] > maxn:
+#         maxn = Input[i]
+#         index = i
 
-print("Largest:", maxn)
-print("Index:", index)
+# print("Largest:", maxn)
+# print("Index:", index)
+
+
+# 👉 Count the number of vowels in a given string.
+# strname ="EYE"
+# strname=str.lower(strname)
+# vowles="aeiou"
+# count=0
+
+# for i in strname:
+#     # print(i)
+#     if i in vowles:
+#         count+=1
+
+
+# print(count)
+
+
+#Write a program to reverse  sentence.
+# strsentence="how are you?"
+# strsentence=reversed(strsentence)
+# strsentence="".join(strsentence)
+# print(strsentence)
+# strwords="oop"
+# print(strwords[::-1])
+    
+
+#Write a program to reverse the words in a given sentence.
+
+
+# strsentence = "how are you?"
+
+
+# words = strsentence.split()
+
+
+
+# reversed_words = words[::-1]
+
+
+
+# result = " ".join(reversed_words)
+# print(result)  
+
+# Write a program to find the GCD (Greatest Common Divisor) of two numbers.
+
+
+# num1=36
+# num2=60
+# smallnumber = num1 if num1 < num2 else num2
+# emptylist=[]
+# for i in range(1,smallnumber+1):
+#     if num1%i==0 and num2%i==0:
+#         emptylist.append(i)
+
+
+# print(max(emptylist))
+
+
+# num1 = 36
+# num2 = 60
+
+# smallnumber = num1 if num1 < num2 else num2
+# gcd = 1   # store greatest divisor found so far
+
+# for i in range(1, smallnumber + 1):
+#     if num1 % i == 0 and num2 % i == 0:
+#         gcd = i   # update gcd
+
+# print("GCD is:", gcd)
+
+
+
+# num1 = 36
+# num2 = 60
+
+# while num2 != 0:
+#     num1, num2 = num2, num1 % num2
+
+# print("GCD is:", num1)
+
+
+# print(36%60)
+
+# dAY 13
+# name="hello"
+# name=name.lower()
+# print(name == name[::-1])
+
+
+# 👉 Day 14 Problem: Find the sum of digits of a given number.
+
+
+# number=1234
+# sum=0
+# while number > 0:
+#         digit = number % 10
+#         sum =sum+digit
+#         number = number // 10
+
+# print(sum)
+
+# 👉 Day 16 Problem: Write a program to check whether a string is a pangram or not.
+
+# alphabets = "abcdefghijklmnopqrstuvwxyz"
+# INPUT_word = "The quick brown fox jumps over the lazy dog"
+# INPUT_word=INPUT_word.replace(" ","").lower()
+# empty_list=[]
+
+# alphabets=sorted(alphabets)
+
+
+# for i in INPUT_word:
+#     if i not in empty_list:
+#         empty_list.append(i)
+
+
+
+# print("pangram") if alphabets==(sorted(empty_list)) else print("no")
+
+
+
+
+# alphabets = "abcdefghijklmnopqrstuvwxyz"
+# INPUT_word = "The quick brown fox jumps over the lazy dog"
+
+# # Clean input
+# INPUT_word = INPUT_word.replace(" ", "").lower()
+
+# # Get unique letters
+# letters = set(INPUT_word)
+
+# # Check
+# if set(alphabets).issubset(letters):
+#     print("pangram")
+# else:
+#     print("not pangram")
+
+# Write a program to find all prime numbers in a given range.
+
+# start = 10  
+# end = 30
+
+
+# for number in range(start, end+1):
+#     count = 0
+#     for i in range(1, number + 1):
+#         if number % i == 0:
+#             count += 1
+#     if count == 2:
+#         print(number)
+
+
+
+# Check if a number is an Armstrong number
+
+
+
+number=153
+numl=len(str(number))
+
+sum=0
+while number > 0:
+        digit = number % 10
+        print(digit)
+        sum+=digit**numl
+        number = number // 10
+        
+
+print(sum)
