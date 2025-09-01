@@ -93,3 +93,24 @@ new_di={"Name":"Manthan",
         "Rollno":2252}
 
 print(new_di.get("Name"))
+
+
+
+
+
+
+
+S_list = [23,22,25,21]
+small_element = (min(S_list))
+print(small_element)
+large_element =(max(S_list))
+print(large_element)
+empty_list = []
+for i in range(small_element, large_element + 1):
+    empty_list.append(i)
+
+print(empty_list)
+
+for num in empty_list:
+    if num not in S_list:
+        print(num)

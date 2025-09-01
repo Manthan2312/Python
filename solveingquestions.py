@@ -357,15 +357,163 @@
 
 
 
-number=153
-numl=len(str(number))
+# number=153
+# numl=len(str(number))
 
-sum=0
-while number > 0:
-        digit = number % 10
-        print(digit)
-        sum+=digit**numl
-        number = number // 10
+# sum=0
+# while number > 0:
+#         digit = number % 10
+#         print(digit)
+#         sum+=digit**numl
+#         number = number // 10
         
 
-print(sum)
+# print(sum)
+
+
+# Reverse the words in a sentence
+# Input= "I love Python"
+
+
+# Input=Input.split()
+# Input=Input[::-1]
+# Input=" ".join(Input)
+# print(Input)
+
+# Find the Largest Element in a List
+
+# Number_list=[22,54,3242,663,22]
+# max_number=Number_list[0]
+
+# for i in Number_list:
+#     if i>max_number:
+#         max_number=i
+
+
+# print(max_number)
+
+
+# Find the Smallest Element in a List
+
+# Number_list=[22,54,3242,663,12]
+# min_number=Number_list[0]
+
+# for i in Number_list:
+#     if i<min_number:
+#         min_number=i
+
+
+# print(min_number)
+
+
+# Find the Second Smallest Element in a List
+
+# Number_list=[22,54,3242,663,12]
+# min_value = min(Number_list)
+# Number_list.remove(min_value)
+# second_min = min(Number_list)
+# print(second_min)
+
+
+# Find the Missing Number in a List
+#  if number is sorted form that time you use this or first do sorting
+# S_list = [1, 2, 3, 5]
+# small_element = S_list[0]
+# print(small_element)
+# large_element = S_list[-1]
+# print(large_element)
+# empty_list = []
+# for i in range(small_element, large_element + 1):
+#     empty_list.append(i)
+
+# print(empty_list)
+
+# for num in empty_list:
+#     if num not in S_list:
+#         print(num)
+
+
+# # if number is unsorted form that time you can use this also
+# S_list = [23,22,25,21]
+# small_element = (min(S_list))
+# print(small_element)
+# large_element =(max(S_list))
+# print(large_element)
+# empty_list = []
+# for i in range(small_element, large_element + 1):
+#     empty_list.append(i)
+
+# print(empty_list)
+
+# for num in empty_list:
+#     if num not in S_list:
+#         print(num)
+
+
+
+# Remove Duplicates from a List
+
+# Number_list=[1, 2, 2, 3, 4, 4, 5]
+# newnumber_list=[]
+
+# for i in Number_list:
+#     if i not in newnumber_list:
+#         newnumber_list.append(i)
+
+
+# print(newnumber_list)
+
+
+
+# # Find the Intersection of Two Lists
+
+# List1 = [1, 2, 3, 4, 5]
+# List2 = [4, 5, 6, 7, 8]
+
+# List1=(set)(List1)
+# List2=(set)(List2)
+# print(List1,List2)
+# result=List1.intersection(List2)
+# print(list(result))
+
+
+# intersection = []
+# for i in List1:
+#     if i in List2 and i not in intersection:
+#         intersection.append(i)
+# print(intersection)
+
+
+
+# Find the Union of Two Lists
+
+List1 = [1, 2, 3, 4]
+List2 = [3, 4, 5, 6]
+
+new_list=[]
+for i in List1:
+    if i not in List2:
+        new_list.append(i)
+
+print(new_list+List2)
+
+List1=(set)(List1)
+List2=(set)(List2)
+print(List1,List2)
+result=List1.union(List2)
+print(list(result))
+
+
+
+# Find the Difference of Two Lists
+
+
+List1 = [1, 2, 3, 4]
+List2 = [3, 4, 5, 6]
+
+new_list=[]
+for i in List1:
+    if i not in List2:
+        new_list.append(i)
+
+print(new_list)
