@@ -487,33 +487,51 @@
 
 # Find the Union of Two Lists
 
-List1 = [1, 2, 3, 4]
-List2 = [3, 4, 5, 6]
+# List1 = [1, 2, 3, 4]
+# List2 = [3, 4, 5, 6]
 
-new_list=[]
-for i in List1:
-    if i not in List2:
-        new_list.append(i)
+# new_list=[]
+# for i in List1:
+#     if i not in List2:
+#         new_list.append(i)
 
-print(new_list+List2)
+# print(new_list+List2)
 
-List1=(set)(List1)
-List2=(set)(List2)
-print(List1,List2)
-result=List1.union(List2)
-print(list(result))
+# List1=(set)(List1)
+# List2=(set)(List2)
+# print(List1,List2)
+# result=List1.union(List2)
+# print(list(result))
 
 
 
 # Find the Difference of Two Lists
 
 
-List1 = [1, 2, 3, 4]
-List2 = [3, 4, 5, 6]
+# List1 = [1, 2, 3, 4]
+# List2 = [3, 4, 5, 6]
 
-new_list=[]
-for i in List1:
-    if i not in List2:
-        new_list.append(i)
+# new_list=[]
+# for i in List1:
+#     if i not in List2:
+#         new_list.append(i)
 
-print(new_list)
+# print(new_list)
+
+
+# Find the Symmetric Difference Between Two Lists
+
+# List1 = [1, 2, 3, 4]
+# List2 = [3, 4, 5, 6]
+# list1=set(List1)
+# list2=set(List2)
+# result=list1.symmetric_difference(list2)
+# print(result)
+
+# Check for Palindrome String
+string_sentence= "A man a plan a canal Panama"
+
+string_sentence=string_sentence.replace(" ","").lower()
+
+
+print("True") if string_sentence=="".join(reversed(string_sentence)) else print("F")
