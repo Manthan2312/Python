@@ -1,1 +1,5 @@
-print("True") if string_sentence==reversed(string_sentence) else print("F")
+     # self.co=self.co
+        # self.fbe=self.fbe
+        # self.en=self.en
+        # self.ah=self.ah
+        # self.sci=self.sci

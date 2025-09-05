@@ -529,9 +529,47 @@
 # print(result)
 
 # Check for Palindrome String
-string_sentence= "A man a plan a canal Panama"
+# string_sentence= "A man a plan a canal Panama"
 
-string_sentence=string_sentence.replace(" ","").lower()
+# string_sentence=string_sentence.replace(" ","").lower()
 
 
-print("True") if string_sentence=="".join(reversed(string_sentence)) else print("F")
+# print("True") if string_sentence=="".join(reversed(string_sentence)) else print("F")
+
+
+# Check if a Number is a Perfect Number
+
+# number=28
+# result=0
+# for i in range(1,number // 2 + 1):
+#     if number%i==0:
+#         result+=i
+
+# if result==number:
+#     print("prefect")
+# else:
+#     print("not")
+
+
+# Check if a Number is a Strong Number
+
+
+
+
+
+
+
+number=145
+
+while number>0:
+    number=number%10
+    sum_facto=1
+    for i in range(1,number+1):
+        sum_facto*=i
+
+ 
+    number=number//2
+
+print(sum_facto)
+
+
