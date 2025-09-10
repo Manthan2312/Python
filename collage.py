@@ -84,147 +84,277 @@
 # e1.investment()
 # e1.expensiveness()
 
-class university:
-    co = 0
-    fbe = 0
-    en = 0
-    ah = 0
-    sci = 0
+# class university:
+#     co = 0
+#     fbe = 0
+#     en = 0
+#     ah = 0
+#     sci = 0
 
-    # Define department subjects and teachers as class-level dictionaries
-    department_subjects = {
-        "Commerce": {
-            "Account": "Aniket Varma",
-            "Taxation": "Gopal Suthar",
-            "Business Administration": "Paresh Thakor"
-        },
-        "Finance and Business Economics": {
-            "Finance": "Nirmala Sitaraman",
-            "Business": "Gautam Adani",
-            "Economics": "Man Mohan Singh"
-        },
-        "Engineering": {
-            "Information": "Amit Shah",
-            "C/C++": "Kaveri Mathur",
-            "DBMS": "Bill Gates"
-        },
-        "Arts and Humanities": {
-            "Arts": "Rakesh Sharma",
-            "Humanities": "Jainil Patel",
-            "History": "Shish Desai"
-        },
-        "Science": {
-            "Biology": "Sujal Roy",
-            "Physics": "Ujjala Bataviya",
-            "Maths": "Mark Waugh"
-        }
-    }
+#     # Define department subjects and teachers as class-level dictionaries
+#     department_subjects = {
+#         "Commerce": {
+#             "Account": "Aniket Varma",
+#             "Taxation": "Gopal Suthar",
+#             "Business Administration": "Paresh Thakor"
+#         },
+#         "Finance and Business Economics": {
+#             "Finance": "Nirmala Sitaraman",
+#             "Business": "Gautam Adani",
+#             "Economics": "Man Mohan Singh"
+#         },
+#         "Engineering": {
+#             "Information": "Amit Shah",
+#             "C/C++": "Kaveri Mathur",
+#             "DBMS": "Bill Gates"
+#         },
+#         "Arts and Humanities": {
+#             "Arts": "Rakesh Sharma",
+#             "Humanities": "Jainil Patel",
+#             "History": "Shish Desai"
+#         },
+#         "Science": {
+#             "Biology": "Sujal Roy",
+#             "Physics": "Ujjala Bataviya",
+#             "Maths": "Mark Waugh"
+#         }
+#     }
 
-    department_workload = {
-        "Commerce": {
-            "Account": 4,
-            "Taxation": 3,
-            "Business Administration": 2
-        },
-        "Finance and Business Economics": {
-            "Finance": 6,
-            "Business": 3,
-            "Economics": 2
-        },
-        "Engineering": {
-            "Information": 5,
-            "C/C++": 2,
-            "DBMS": 3
-        },
-        "Arts and Humanities": {
-            "Arts": 3,
-            "Humanities": 7,
-            "History": 6
-        },
-        "Science": {
-            "Biology": 1,
-            "Physics": 3,
-            "Maths": 2
-        }
-    }
+#     department_workload = {
+#         "Commerce": {
+#             "Account": 4,
+#             "Taxation": 3,
+#             "Business Administration": 2
+#         },
+#         "Finance and Business Economics": {
+#             "Finance": 6,
+#             "Business": 3,
+#             "Economics": 2
+#         },
+#         "Engineering": {
+#             "Information": 5,
+#             "C/C++": 2,
+#             "DBMS": 3
+#         },
+#         "Arts and Humanities": {
+#             "Arts": 3,
+#             "Humanities": 7,
+#             "History": 6
+#         },
+#         "Science": {
+#             "Biology": 1,
+#             "Physics": 3,
+#             "Maths": 2
+#         }
+#     }
 
-    def __init__(self, department, name, enrollment_number):
-        self.u_department = department
-        self.us_name = name
-        self.us_enr = str(enrollment_number)
-        if len(self.us_enr) == 10:
-            if self.u_department == "Commerce":
-                university.co += 1
-            elif self.u_department == "Finance and Business Economics":
-                university.fbe += 1
-            elif self.u_department == "Engineering":
-                university.en += 1
-            elif self.u_department == "Arts and Humanities":
-                university.ah += 1
-            elif self.u_department == "Science":
-                university.sci += 1
-            else:
-                self.u_department = "NO DEPARTMENT EXISTS"
-        else:
-            print("Not valid enrollment number")
+#     def __init__(self, department, name, enrollment_number):
+#         self.u_department = department
+#         self.us_name = name
+#         self.us_enr = str(enrollment_number)
+#         if len(self.us_enr) == 10:
+#             if self.u_department == "Commerce":
+#                 university.co += 1
+#             elif self.u_department == "Finance and Business Economics":
+#                 university.fbe += 1
+#             elif self.u_department == "Engineering":
+#                 university.en += 1
+#             elif self.u_department == "Arts and Humanities":
+#                 university.ah += 1
+#             elif self.u_department == "Science":
+#                 university.sci += 1
+#             else:
+#                 self.u_department = "NO DEPARTMENT EXISTS"
+#         else:
+#             print("Not valid enrollment number")
+#             exit()
+
+#     def infodetailsofstudent(self):
+#         print(self.us_name)
+#         print(self.us_enr)
+#         if self.u_department == "NO DEPARTMENT EXISTS":
+#             print("Student does not have any department and not exists")
+#             exit()
+#         else:
+#             print(self.u_department)
+#         if self.u_department == "Commerce":
+#             print(university.co)
+#         elif self.u_department == "Finance and Business Economics":
+#             print(university.fbe)
+#         elif self.u_department == "Engineering":
+#             print(university.en)
+#         elif self.u_department == "Arts and Humanities":
+#             print(university.ah)
+#         elif self.u_department == "Science":
+#             print(university.sci)
+
+#     def departmentfacultydetails(self):
+#         subjects = university.department_subjects.get(self.u_department)
+#         if subjects:
+#             for subject, teacher in subjects.items():
+#                 print(f"{subject}: {teacher}")
+
+#     def totalworkload(self):
+#         workloads = university.department_workload.get(self.u_department)
+#         if workloads:
+#             for subject, load in workloads.items():
+#                 print(f"{subject}: {load}")
+#             total = sum(workloads.values())
+#             print(f"Total workload: {total}")
+
+#     def topthings(self):
+#         workloads = university.department_workload.get(self.u_department)
+#         if workloads:
+#             sorted_loads = sorted(workloads.values(), reverse=True)
+#             print(sorted_loads)
+
+
+
+# u1=university("Science","Manthan",1201231234)
+# u1.infodetailsofstudent()
+# u1.departmentfacultydetails()
+# u1.totalworkload()
+# u1.topthings()
+# print("--------------------------------------")
+# u2=university("Commerce","Tirth",1201231135)
+# u2.infodetailsofstudent()
+# u2.departmentfacultydetails()
+# u2.totalworkload()
+# u2.topthings()
+# print("--------------------------------------")
+# u3=university("Science","Khushubu",1201231236)
+# u3.infodetailsofstudent()
+# u3.departmentfacultydetails()
+# u3.totalworkload()
+# u3.topthings()
+
+
+# class bankaccount:
+
+#     defaultbalance=0
+#     def __init__(self,name,ac):
+#         self.ah_name=name
+#         self.account_number=ac
+      
+
+
+#     def infodetails(self):
+#         print(self.ah_name)
+#         print(self.account_number)
+#         # print(bankaccount.defaultbalance)
+
+
+# class bankaccount_balanace(bankaccount):
+
+#     def updatebalance(self,balance):
+#         bankaccount.defaultbalance+=balance
+#         print("YOUR BALANCE HAS BEEN UPDATED")
+
+#     def withdrawbalance(self,withdrawbalance):
+#         bankaccount.defaultbalance-=withdrawbalance
+#         print("YOUR BALANCE HAS BEEN WITHDRAW")
+
+#     def checkthebalance(self):
+#         print(bankaccount.defaultbalance)
+
+        
+
+
+# b1=bankaccount_balanace("Manthan",789456123369)
+# b1.infodetails()
+# b1.updatebalance(5000)
+# # b1.infodetails()
+# b1.updatebalance(1000)
+# # b1.infodetails()
+# b1.withdrawbalance(2000)
+# # b1.infodetails()
+
+# b1.checkthebalance()
+
+
+
+
+class newadmini:
+    def __init__(self,name,age,phone,city):
+        self.name=name
+        self.age=age
+        self.phone=phone
+        self.city=city
+
+    def studentdetails(self):
+        if self.age<18:
+            self.age="You Should Go to the School Bro not collage"
+            print(f"{self.age}")
             exit()
+        
 
-    def infodetailsofstudent(self):
-        print(self.us_name)
-        print(self.us_enr)
-        if self.u_department == "NO DEPARTMENT EXISTS":
-            print("Student does not have any department and not exists")
-            exit()
+        print(f"The Name of the student is:{self.name}")
+        print(f"The Age of the Student is:{self.age}")
+        self.phone=str(self.phone)
+        if len(self.phone)==10:
+            print(f"The Phone Number of the student is:{self.phone}")
         else:
-            print(self.u_department)
-        if self.u_department == "Commerce":
-            print(university.co)
-        elif self.u_department == "Finance and Business Economics":
-            print(university.fbe)
-        elif self.u_department == "Engineering":
-            print(university.en)
-        elif self.u_department == "Arts and Humanities":
-            print(university.ah)
-        elif self.u_department == "Science":
-            print(university.sci)
+            print("Give valid Number bro")
+        print(f"The City of the student is:{self.city}")
 
-    def departmentfacultydetails(self):
-        subjects = university.department_subjects.get(self.u_department)
-        if subjects:
-            for subject, teacher in subjects.items():
-                print(f"{subject}: {teacher}")
+class coursedetails(newadmini):
+    choosecourse=""
+    List_course=[]
+    def __init__(self):
+        coursedetails.List_course=["M.COM","B.COM","LLB","IMSC-IT","BBA"]
+        print(coursedetails.List_course)
+    
+    def choosecourse(self):
+        Course_name=input("Enter the Course name You want\n")
 
-    def totalworkload(self):
-        workloads = university.department_workload.get(self.u_department)
-        if workloads:
-            for subject, load in workloads.items():
-                print(f"{subject}: {load}")
-            total = sum(workloads.values())
-            print(f"Total workload: {total}")
+        for i in coursedetails.List_course:
+            if i==Course_name.upper():
+                coursedetails.choosecourse=i
+                
 
-    def topthings(self):
-        workloads = university.department_workload.get(self.u_department)
-        if workloads:
-            sorted_loads = sorted(workloads.values(), reverse=True)
-            print(sorted_loads)
+        print("You choose this course:",coursedetails.choosecourse)
 
 
+class feesbycourseyouchoose(coursedetails):
+    tokenfees=5000
+    unpaidamount=0
+    defaultfees=True
+    feesofcourse={"M.COM":35000,
+                      "B.COM":25000,
+                      "LLB":30000,
+                      "IMSC-IT":27000,
+                      "BBA":30000
+                      }
+    def __init__(self):
+        self.value=0
+     
+        for i in feesbycourseyouchoose.feesofcourse:
+            self.value=feesbycourseyouchoose.feesofcourse.get(coursedetails.choosecourse)
+        print(self.value)
+        tokenamount=int(input("Enter Token fees that is 5000 rupees\n"))
+        if tokenamount==feesbycourseyouchoose.tokenfees:
+            feesbycourseyouchoose.unpaidamount=feesbycourseyouchoose.feesofcourse.get(coursedetails.choosecourse)-tokenamount
+            print(feesbycourseyouchoose.unpaidamount)
+        else:
+            feesbycourseyouchoose.unpaidamount=feesbycourseyouchoose.feesofcourse.get(coursedetails.choosecourse)-tokenamount
+            print(feesbycourseyouchoose.unpaidamount)
+            feesbycourseyouchoose.defaultfees=False
 
-u1=university("Science","Manthan",1201231234)
-u1.infodetailsofstudent()
-u1.departmentfacultydetails()
-u1.totalworkload()
-u1.topthings()
-print("--------------------------------------")
-u2=university("Commerce","Tirth",1201231135)
-u2.infodetailsofstudent()
-u2.departmentfacultydetails()
-u2.totalworkload()
-u2.topthings()
-print("--------------------------------------")
-u3=university("Science","Khushubu",1201231236)
-u3.infodetailsofstudent()
-u3.departmentfacultydetails()
-u3.totalworkload()
-u3.topthings()
+class confirmad(feesbycourseyouchoose):
+    def __init__(self):
+        if feesbycourseyouchoose.defaultfees==True:
+            print("YOUR ADMISSION IS CONFIRM")
+        else:
+            print("YOU ADMISSION IS PENDING")
 
+        
+            
+
+s1=newadmini("Manthan",19,9913143329,"Mumbai")
+s1.studentdetails()
+
+s2=coursedetails()
+s2.choosecourse()
+
+s3=feesbycourseyouchoose()
+s4=confirmad()
