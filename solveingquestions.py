@@ -553,23 +553,91 @@
 
 # Check if a Number is a Strong Number
 
+# number=145
+
+# import math
+
+# number_list = str(number)
+# sum_fact = 0
+# for digit in number_list:
+# 	sum_fact += math.factorial(int(digit))
+
+# print("Strong Number" if sum_fact == number else "Not a Strong Number")
+
+
+# Write a program to reverse a given number.
+# number=12345
+# digit = 0
+# reversed_num = 0
+# while number > 0:
+#     digit = number % 10
+#     reversed_num = reversed_num * 10 + digit
+#     number = number // 10
+
+# print(reversed_num)
+    
+# number=str(number)
+
+# number="".join(reversed(number))
+# print(int(number))
+
+
+# Check if a Number is a Harshad (Niven) Number
+# Input: 18  
+# Calculation: 1 + 8 = 9 → 18 % 9 == 0  
+# Output: True (Harshad Number)
+
+
+# number=18
+# copy_num=number
+# sum= 0
+# while number > 0:
+#     digit = number % 10
+#     sum+= digit
+#     number = number // 10
+# print("Harshad Number") if copy_num%sum==0 else print("Not Harshad Number")    
+
+
+# Write a program to find all Armstrong Numbers in a given range (e.g., from 100 to 999).
+
+# for number in range(100, 999):
+#     num_len = len(str(number))
+#     temp = number
+#     total = 0
+#     while temp > 0:
+#         digit = temp % 10
+#         total += digit ** num_len
+#         temp = temp // 10
+#     if total == number:
+#         print(number)
+
+
+ # Problem: Count the Number of Digits in a Number
+
+# number=18234
+# count=0
+
+# while number > 0:
+#     digit = number % 10
+
+#     number = number // 10
+#     count+=1
+
+
+# print(count)
+
+# Check if a Number is Even or Odd
+number=17
+print("even") if number%2==0 else print("odd")
 
 
 
+# Find the Sum of All Natural Numbers up to n
+# Input: 5 → Output: 15 (1+2+3+4+5)
+number=5
+sum=0
+for i in range(1,number+1):
+    sum+=i
 
-
-
-number=145
-
-while number>0:
-    number=number%10
-    sum_facto=1
-    for i in range(1,number+1):
-        sum_facto*=i
-
- 
-    number=number//2
-
-print(sum_facto)
-
+print(sum)
 
