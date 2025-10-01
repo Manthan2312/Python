@@ -4,25 +4,39 @@
 
 #lambada function
 
-double= lambda x:x*2
+# double= lambda x:x*2
 
-name=lambda n:print(f"hello, {n}")
-
-
-print(double(2))
-name("Manthan Patel")
+# name=lambda n:print(f"hello, {n}")
 
 
-max_num = lambda a, b: a if a > b else b
-print(max_num(10, 25))  # 25
+# print(double(2))
+# name("Manthan Patel")
+
+
+# max_num = lambda a, b: a if a > b else b
+# print(max_num(10, 25))  # 25
 
 
 
-num1=12 
-num2=15
+# num1=12 
+# num2=15
 
 
-# print(num1 if num1 > num2 else num2)
-print(num1 if num1%2==0  else num2)
-print("even") if num2%2==0 else print("odd")
+# # print(num1 if num1 > num2 else num2)
+# print(num1 if num1%2==0  else num2)
+# print("even") if num2%2==0 else print("odd")
 
+cube= lambda x:x**3
+
+print(cube(2))
+
+
+
+say=lambda n:print("Hello ",n)
+
+say("Manthan")
+
+kamo=lambda q:print(q ,"squre",q*q)
+
+
+kamo(2)

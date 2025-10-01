@@ -15,30 +15,45 @@
 # print(m1.number)
 # print(m1.sub(32.453,34.42))
 
-class bankaccount:
-    def __init__(self,accn,balance):
-        if not bankaccount.checkan(accn):  
-            raise ValueError("Invalid account number!")
-        self.accountnumber=accn
-        self.balance=balance
+# class bankaccount:
+#     def __init__(self,accn,balance):
+#         if not bankaccount.checkan(accn):  
+#             raise ValueError("Invalid account number!")
+#         self.accountnumber=accn
+#         self.balance=balance
   
 
-    def deposit(self,inb):
-        self.balance+=inb
+#     def deposit(self,inb):
+#         self.balance+=inb
+
+
+#     @staticmethod
+#     def checkan(accn):
+#         """Account number must be 10 digits long."""
+#         return len(str(accn)) == 12
+
+#     def info(self):
+#         print(self.accountnumber)
+#         print(self.balance)
+
+
+
+# b1=bankaccount(123456781219,5000)
+# b1.info()
+# b1.deposit(123)
+# b1.info()
+
+
+class freefull:
+
+    def __init__(self):
+        print("hello from the cons")
+        freefull.printthegreeet()
 
 
     @staticmethod
-    def checkan(accn):
-        """Account number must be 10 digits long."""
-        return len(str(accn)) == 12
-
-    def info(self):
-        print(self.accountnumber)
-        print(self.balance)
+    def printthegreeet():
+        print("hello from the Admin")
 
 
-
-b1=bankaccount(123456781219,5000)
-b1.info()
-b1.deposit(123)
-b1.info()
+f1=freefull()
