@@ -207,6 +207,149 @@
 #         print(index)
 
         
+# #  Even Numbers Sum
+# numbers=[1,2,3,4,5,6]
+# total=0
+# for i in numbers:
+#     if i%2==0:
+#         total+=i
+
+
+# print(total)
+
+# # Reverse a String
+
+# string="Manthan"
+
+# print(string[::-1])
+
+# # Count Word Frequency
+# sente="python is fun and python is easy"
+# sente=sente.split()
+# print(sente)
+# word_count={}
+# for i in sente:
+#     if i in word_count:
+#         word_count[i]+=1
+#     else:
+#         word_count[i]=1
+
+
+# print(word_count)
+
+# # Palindrome Check
+
+# def is_palindrome(word):
+#     word=word.lower()
+#     if word==word[::-1]:
+#         return True
+#     else:
+#         return False
+    
+
+# print(is_palindrome("Level"))
+
+# # Find Maximum Number
+
+# def find_max(number_list):
+#     return max(number_list)
+
+# number_list=[232,34,922,31]
+# print(find_max(number_list))
+
+
+# # Remove Duplicates
+
+# num_list=[1, 2, 3, 2, 1, 4]
+# new_empty_num=[]
+
+# def new_func(num_list, new_empty_num):
+#     for i in num_list:
+#         if i  not in  new_empty_num:
+#              new_empty_num.append(i)
+#     return new_empty_num
+
+# new_empty_num = new_func(num_list, new_empty_num)
+    
+    
+# print(new_empty_num)
+
+
+# # Factorial using Loop
+
+# number=5
+# facto=1
+
+# for i in range(1,number+1):
+#     facto*=i
+
+# print(facto)
+
+
+# # Count Vowels
+
+# word= "education"
+# vowels=["a","e","i","o","u"]
+# word=word.lower()
+# count=0
+# for i in word:
+#     if i in vowels:
+#         count+=1
+
+# print(count)
+
+# # Second Largest Number
+
+# number_list=[1,2,3,5,24,55]
+# duclipcate_list=number_list.copy()
+# number_MAX=duclipcate_list.remove((max(duclipcate_list)))
+# second_max=max(duclipcate_list)
+# print(second_max) 
+# print("original list",number_list)
+
+
+# # Prime Number Check
+# number_n=7
+# count=0
+# for i in range(1,number_n+1):
+#     if number_n%i==0:
+#         count+=1
+
+
+# print(count)
+# if count==2:
+#     print("prime")
+# else:
+#     print("not prime")
+
+# names = ["Alice", "Bob", "Charlie", "David", "jacob", "Jasmine", "Eve", "jack"]
+# filtered_names=[]
+# for i in names:
+#     uname=i.lower()
+#     if uname.startswith("j"):
+#         names=i.upper()
+#         filtered_names.append(names)
+
+# print(filtered_names)
+
+
+# def read_first_line(filename):
+#     try:
+#         f=open(filename,'r')
+#         # print(f)
+#         content=f.read()
+#         print(content)
+#         f.close()
+#     except:
+#         print("Error: File not found.")
+
+
+# read_first_line("tes.txt")
+
+user_input = "  PyThOn|iS|FuN \n"
+user_input = user_input.lstrip().rstrip("\n").replace("|"," ").lower()
+
+print(user_input)
 
 
 

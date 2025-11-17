@@ -1,7 +1,7 @@
-# a=5
-# print(a)
-# print(a:=10)
-# print(a)
+a=5
+print(a)
+print(a:=10)
+print(a)
 
 # list_numbers=[1,2,3,4,5]
 
@@ -43,11 +43,3 @@ if (number:=int(input("Enter the number")))==0:
     print(number)
 else:
     print("error")
-
-
-
-
-
-
-
-
