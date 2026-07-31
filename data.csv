@@ -1,0 +1,9 @@
+Emp_ID,Name,Department,Salary,Experience
+101,Anna,Sales,55000,3
+102,Ben,IT,72000,5
+103,Chloe,HR,,2
+102,Ben,IT,72000,5
+104,Daniel,Sales,48000,1
+105,Emma,IT,,4
+106,Frank,HR,63000,6
+101,Anna,Sales,55000,3

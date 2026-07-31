@@ -1,0 +1,11 @@
+,employeeid,employeename,department,city,salary,joiningdate,joiningyear
+0,101,John Doe,IT,New York,75000.0,2018-06-12,2018
+1,102,Jane Smith,HR,Chicago,62000.0,2019-03-25,2019
+2,103,Michael Johnson,Finance,San Francisco,69000.0,2020-01-15,2020
+3,104,Emily Davis,IT,Los Angeles,80000.0,2017-11-30,2017
+4,105,David Wilson,Marketing,New York,55000.0,2021-07-19,2021
+5,106,Sarah Brown,Finance,Chicago,72000.0,2018-09-05,2018
+6,107,Chris Taylor,HR,San Francisco,60000.0,2022-02-10,2022
+7,108,Ashley Martinez,Marketing,Los Angeles,58000.0,2019-12-01,2019
+8,109,Matthew Anderson,IT,Chicago,77000.0,2020-08-22,2020
+9,110,Olivia Thomas,Finance,New York,69000.0,2021-05-14,2021

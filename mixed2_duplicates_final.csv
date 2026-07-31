@@ -1,0 +1,9 @@
+customer_id,customer_name,signup_date,country,order_id,order_date,spend,product_category
+C101, Alice Smith,2025-01-15, US,O501,2026-05-01,150.0, Electronics
+C101, Alice Smith,2025-01-15, US,O503,2026-05-03,85.0, Electronics
+C101, Alice Smith,2025-01-15, US,O506,2026-05-06,30.0, Home
+C102, Bob Jones,2025-02-20, UK,O502,2026-05-02,45.5, Apparel
+C102, Bob Jones,2025-02-20, UK,O508,2026-05-08,60.0, Home
+C103, Charlie Brown,2025-03-05, US,O504,2026-05-04,200.0, Home
+C104, David Miller,2025-01-22, CA,O505,2026-05-05,120.0, Apparel
+C105, Eva Green,2025-04-12, UK,O507,2026-05-07,95.0, Electronics

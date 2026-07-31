@@ -1,0 +1,16 @@
+,OrderID,Customer,City,Category,OrderDate,Sales
+0,1001,Alice,New York,Electronics,2024-01-05,1200
+1,1002,Bob,Chicago,Furniture,2024-01-06,850
+2,1003,Charlie,New York,Clothing,2024-01-08,320
+3,1004,David,Houston,Electronics,2024-01-10,1500
+4,1005,Emma,Chicago,Clothing,2024-01-12,450
+5,1006,Frank,Houston,Furniture,2024-01-15,980
+6,1007,Grace,New York,Electronics,2024-01-18,760
+7,1008,Henry,Miami,Clothing,2024-01-20,290
+8,1009,Ivy,Miami,Furniture,2024-01-22,1150
+9,1010,Jack,Chicago,Electronics,2024-01-25,1340
+10,1011,Alice,Houston,Clothing,2024-01-28,410
+11,1012,Bob,New York,Furniture,2024-02-01,920
+12,1013,Charlie,Miami,Electronics,2024-02-03,1680
+13,1014,David,Chicago,Clothing,2024-02-05,530
+14,1015,Emma,Houston,Furniture,2024-02-08,1020

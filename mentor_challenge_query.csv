@@ -1,0 +1,11 @@
+EmployeeID,Employee Name,Department,City,Gender,Age,Salary,Experience,Status
+E101,  John Doe ,HR,New York,M,34,65000,5,Active
+E102,Jane Smith, hr,new york,F,28,45000,2,Active
+E103, Bob Johnson ,Fin,Chicago,m,45,95000,12,Active
+E104,Alice Brown,Finance,chicago,f,,85000,8,Terminated
+E105, Charlie Green ,  IT ,San Francisco,Male,31,70000,,Active
+E106,Eva White,IT,san francisco,Female,29,58000,3,Active
+E107, David Black ,HR,New York,M,41,62000,4,Active
+E108, Grace Lee ,Finance,Chicago,F,38,72000,6,Active
+E109, Ian Wright ,IT,New York,M,35,80000,7,Active
+E110, Judy Gross ,Fin,San Francisco,F,50,110000,15,Active

@@ -1,0 +1,12 @@
+ Employee ID , Employee Name , Department , Age , Salary , City
+101, Alice Johnson , HR ,25,45000, New York
+102, Bob Smith , IT ,,60000, Chicago
+103, Charlie Brown , Finance ,30,, Boston
+104, Diana Prince , IT ,28,75000, Seattle
+105, Ethan Hunt , HR ,35,52000,
+106, Fiona Green , Finance ,29,68000, Boston
+107, George King , IT ,31,70000, Chicago
+108, Hannah Lee , HR ,,48000, New York
+109, Ian Clark , Finance ,27,65000, Seattle
+110, Julia Adams , IT ,32,80000, Chicago
+

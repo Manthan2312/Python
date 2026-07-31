@@ -1,0 +1,13 @@
+  Emp ID ,  Full Name  ,DEPT,Salary ($),  Experience_Yrs ,Rating
+E101,Alice Smith,HR,85000,5,A
+E102,Bob Jones,IT,missing,3,B
+E103,Charlie Brown,IT,120000,na,A
+E104,David Miller,Sales,90000,7,C
+E105,Eva Green,HR,null,2,B
+E106,Frank White,Sales,95000,8,A
+E107,Grace Black,IT,140000,10,A
+E108,Henry Stone,Sales,85000,4,B
+E109,Ivy Davis,HR,95000,6,A
+E110,Jack Thomas,IT,110000,5,C
+E111,Karen Lewis,Sales,100000,9,A
+E112,Leo Martin,HR,85000,1,B

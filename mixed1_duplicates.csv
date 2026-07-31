@@ -1,0 +1,11 @@
+emp_id,full name,dept,salary,is_active
+101,Alice Smith,Sales,70000.0,True
+102,Bob Jones,Marketing,,False
+103,Charlie Brown,HR,60000.0,True
+104,Diana Prince,Engineering,110000.0,Yes
+101,Alice Smith,Sales,70000.0,True
+105,Evan Wright,hr,55000.0,True
+106,Fiona Gallagher,Sales,72000.0,
+102,Bob Jones,Marketing,,False
+107,George Clark,,95000.0,True
+108,Hannah Abbott,Engineering,105000.0,Yes

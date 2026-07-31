@@ -1,0 +1,6 @@
+,EmpID,Name,Department,Experience,Salary,Salary Category,Bonus,Final Salary
+0,101,Amit,HR,2,40000.0,Normal,4000.0,44000.0
+1,102,Neha,IT,5,65000.0,High,6500.0,71500.0
+2,103,Rohan,Finance,3,60000.0,Normal,6000.0,66000.0
+3,104,Priya,IT,7,80000.0,High,8000.0,88000.0
+4,106,Sneha,Finance,4,55000.0,Normal,5500.0,60500.0

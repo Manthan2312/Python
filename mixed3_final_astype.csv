@@ -1,0 +1,6 @@
+,CustomerID,Age,State,PurchaseAmount,Active
+0,CUST001,25,Gujarat,1500.0,True
+1,CUST002,32,Maharashtra,2500.0,False
+2,CUST003,28,Delhi,1800.0,True
+3,CUST004,40,Karnataka,3200.0,True
+4,CUST005,35,Tamil Nadu,2100.0,False

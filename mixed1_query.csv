@@ -1,0 +1,21 @@
+Emp ID,Employee Name,Department,Salary,Age,City
+101,Alice,HR,55000,28,New York
+102,Bob,IT,72000,35,Chicago
+103,Charlie,Finance,68000,40,Houston
+104,David,IT,80000,30,Seattle
+105,Eva,HR,,27,Boston
+106,Frank,Finance,59000,45,Chicago
+107,Grace,IT,95000,32,
+108,Helen,Marketing,62000,29,Los Angeles
+109,Ian,HR,61000,38,New York
+110,Jack,Finance,70000,41,Dallas
+111,Kate,Marketing,58000,26,Miami
+112,Liam,IT,76000,34,Seattle
+113,Mia,Finance,,37,Houston
+114,Noah,Human Resources,64000,31,Boston
+115,Olivia,Information Technology,88000,36,Chicago
+116,Peter,Marketing,67000,33,Denver
+117,Quinn,HR,53000,29,New York
+118,Rachel,Finance,82000,44,Dallas
+119,Sam,Information Technology,61000,28,Austin
+120,Tina,Human Resources,65000,39,Boston

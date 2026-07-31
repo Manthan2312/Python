@@ -1,0 +1,21 @@
+EmployeeID,Name,Department,Age,Salary,Experience,City
+101,Alice,HR,28,45000,3,New York
+102,Bob,IT,35,75000,8,Chicago
+103,Charlie,Finance,40,82000,12,Boston
+104,David,IT,29,68000,5,Seattle
+105,Eva,HR,31,,6,New York
+106,Frank,Finance,45,91000,18,Boston
+107,Grace,Marketing,27,52000,2,Chicago
+108,Helen,IT,38,,10,Seattle
+109,Ian,Marketing,33,60000,7,New York
+110,Jack,Finance,50,99000,22,Boston
+111,Kate,HR,26,43000,2,Chicago
+112,Liam,IT,41,88000,15,Seattle
+113,Mia,Marketing,30,57000,,New York
+114,Noah,Finance,36,79000,11,Boston
+115,Olivia,HR,39,65000,14,Chicago
+116,Paul,IT,32,72000,6,Seattle
+117,Quinn,Marketing,29,54000,4,Boston
+118,Rachel,Finance,44,,17,New York
+119,Sam,HR,34,61000,9,Chicago
+120,Tina,IT,37,85000,13,Seattle

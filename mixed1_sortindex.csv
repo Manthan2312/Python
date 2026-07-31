@@ -1,0 +1,11 @@
+,employee_id,employee_name,department,age,salary,city
+9,110,Julia Adams, IT ,32,80000.0, Chicago
+8,109,Ian Clark, Finance ,27,65000.0, Seattle
+7,108,Hannah Lee, HR ,29,48000.0, New York
+6,107,George King, IT ,31,70000.0, Chicago
+5,106,Fiona Green, Finance ,29,68000.0, Boston
+4,105,Ethan Hunt, HR ,35,52000.0,Unknown
+3,104,Diana Prince, IT ,28,75000.0, Seattle
+2,103,Charlie Brown, Finance ,30,65000.0, Boston
+1,102,Bob Smith, IT ,29,60000.0, Chicago
+0,101,Alice Johnson, HR ,25,45000.0, New York

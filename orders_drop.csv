@@ -1,0 +1,13 @@
+order_id,customer_id,product_id,quantity,order_date,payment_method,status,temp_col
+5001,101,P101,1,2023-05-02,"Credit Card","Delivered","X1"
+5002,102,P102,2,2023/05/04,"Debit Card","Delivered","X2"
+5003,103,P103,3,2023-05-08,"UPI","Pending","X3"
+5004,104,P104,,2023-05-11,"Cash","Cancelled","X4"
+5005,105,P105,1,invalid_date,"Credit Card","Delivered","X5"
+5006,106,P106,10,2023-05-14,"UPI","Delivered","X6"
+5007,107,P107,5,2023-05-18,"Cash","Pending","X7"
+5008,108,P108,2,2023-05-20,"Credit Card","Delivered","X8"
+5009,109,P109,1,2023-05-22,"Debit Card","","X9"
+5010,110,P110,4,2023-05-24,"UPI","Delivered","X10"
+5011,999,P101,2,2023-05-25,"Cash","Delivered","X11"
+5010,110,P110,4,2023-05-24,"UPI","Delivered","X10"

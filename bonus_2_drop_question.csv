@@ -1,0 +1,6 @@
+EmpID,Name,Department,Salary,City,Temp_ID,Internal_Remark
+E101,Aarav Sharma,IT Support,65000,Mumbai,T-9041,High performance on recent migration
+E102,Priya Patel,Human Resources,58000,Ahmedabad,T-2281,Contract renewal pending Q4 review
+E103,Rohan Das,Finance,72000,Kolkata,T-7732,Eligible for senior analyst promotion
+E104,Ananya Reddy,Marketing,61000,Hyderabad,T-1054,Relocating to branch office soon
+E105,Vikram Singh,Engineering,95000,Bengaluru,T-8849,Key contributor to core codebase

@@ -1,0 +1,12 @@
+customer_id,full_name,city,gender,signup_date,age,email,internal_id
+101,"  Alice Johnson ","New York","Female","2023-01-15","28","alice@example.com","INT001"
+102,"bob smith","los angeles","Male","2022-11-20","35","bob@example.com","INT002"
+103,"Charlie Brown","Chicago","Male","2023/03/10","31","charlie@example.com","INT003"
+104,"Daisy Miller","Houston","Female","","26","daisy@example.com","INT004"
+105,"Emily Davis ","Phoenix","Female","2022-08-05","","emily@example.com","INT005"
+106," Frank Wilson","Chicago","Male","2023-02-18","40","","INT006"
+107,"Grace Lee","New York","Female","invalid_date","29","grace@example.com","INT007"
+108,"Henry Adams","Houston","Male","2023-04-22","Thirty","henry@example.com","INT008"
+109,"Ivy Thomas","Phoenix","","2023-05-01","27","ivy@example.com","INT009"
+110,"John Walker","Chicago","Male","2022-12-12","33","john@example.com","INT010"
+110,"John Walker","Chicago","Male","2022-12-12","33","john@example.com","INT010"

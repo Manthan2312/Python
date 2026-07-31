@@ -1,0 +1,4 @@
+,Product,Quantity,Price,OrderDate,Total Amount
+0,Laptop,2,55000.0,2025-01-05,110000.0
+1,Mouse,5,700.0,2025-01-10,3500.0
+2,Keyboard,3,1500.0,2025-01-15,4500.0

@@ -1,0 +1,16 @@
+OrderID,CustomerName,City,Department,Product,Category,OrderDate,Quantity,Price,Discount,PaymentMode
+O1001," Rahul Patel ",Ahmedabad,Electronics,Laptop,Computers,2025-01-05,2,55000,10,UPI
+O1002,"NEHA SHAH",Surat,Fashion,T-Shirt,Clothing,2025-01-08,5,1200,,Card
+O1003," amit mehta ",Ahmedabad,Electronics,Mouse,Accessories,2025-01-10,3,700,5,Cash
+O1004,"Priya Shah",Rajkot,Grocery,Rice,Food,2025-01-15,8,120,,UPI
+O1005,"Manthan Patel",Ahmedabad,Electronics,Keyboard,Accessories,2025-01-18,4,1500,10,Card
+O1006,"Karan Patel",Vadodara,Fashion,Jeans,Clothing,2025-02-02,2,2500,15,Cash
+O1007," Riya Shah ",Ahmedabad,Grocery,Oil,Food,2025-02-05,3,1800,,UPI
+O1008,"Sneha Patel",Surat,Electronics,Monitor,Computers,2025-02-10,1,14000,12,Card
+O1009,"Jay Patel",Rajkot,Fashion,Shoes,Footwear,2025-02-12,2,3200,10,Cash
+O1010,"Harsh Mehta",Ahmedabad,Electronics,Printer,Computers,2025-02-15,1,9000,,UPI
+O1011,"Tirth Shah",Vadodara,Grocery,Sugar,Food,2025-02-20,5,60,5,Cash
+O1012,"Khushbu Patel",Ahmedabad,Fashion,Saree,Clothing,2025-02-25,2,4500,8,Card
+O1013,"Aastha Shah",Surat,Electronics,SSD,Accessories,2025-03-01,3,6500,10,UPI
+O1014,"Vikas Patel",Rajkot,Electronics,Laptop,Computers,2025-03-05,1,60000,,Card
+O1015,"Dhruv Shah",Ahmedabad,Grocery,Wheat,Food,2025-03-08,6,80,5,Cash

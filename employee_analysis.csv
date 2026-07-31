@@ -1,0 +1,11 @@
+EmployeeID, Name ,Department,City,Salary,JoiningDate,Performance,Internal_Code,Temporary_ID,Admin_Remark
+101, Alice Smith ,HR,New York,50000.0,2021-03-15,Excellent,IC-99,T-501,Check background
+102,bob jones,IT,London,,2022-06-01,Good,IC-10,T-502,None
+103, Charlie Brown,Finance,New York,75000.0,2020-01-10,Average,IC-44,T-503,Promoted
+104,Diana Prince ,IT,Paris,85000.0,2023-08-22,Excellent,IC-23,T-504,None
+105, Evan Wright,HR,London,48000.0,2021-11-05,Average,IC-88,T-505,On leave
+106,Fiona Gallagher,Finance,Paris,,2019-04-18,Good,IC-12,T-506,None
+107, George Clark ,Marketing,New York,60000.0,2022-07-30,Excellent,IC-55,T-507,New transfer
+108,Hannah Abbott,Marketing,London,62000.0,2023-02-14,Average,IC-77,T-508,None
+109, Ian Malcolm,IT,Paris,95000.0,2020-12-05,Excellent,IC-31,T-509,Remote worker
+110,Julia Roberts ,Finance,New York,110000.0,2024-01-20,Good,IC-02,T-510,None

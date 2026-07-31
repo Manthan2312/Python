@@ -1,0 +1,7 @@
+customer_id , customer_name, signup_date, Country
+C101, Alice Smith, 2025-01-15, US
+C102, Bob Jones, 2025-02-20, UK
+C103, Charlie Brown, 2025-03-05, US
+C104, David Miller, 2025-01-22, CA
+C101, Alice Smith, 2025-01-15, US
+C105, Eva Green, 2025-04-12, UK

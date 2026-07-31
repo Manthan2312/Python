@@ -1,0 +1,12 @@
+product_id,product_name,category,price,stock,internal_code
+P101," Laptop ","Electronics","950","20","A001"
+P102,"mouse","electronics","25","100","A002"
+P103,"Keyboard","Electronics","45","80","A003"
+P104,"Office Chair","Furniture","150","","A004"
+P105,"Desk","Furniture","300","15","A005"
+P106,"Notebook","Stationery","5","500","A006"
+P107,"Pen","stationery","2","1000","A007"
+P108,"Monitor","Electronics","invalid","30","A008"
+P109,"Printer","Electronics","","12","A009"
+P110,"Table Lamp ","Furniture","40","25","A010"
+P110,"Table Lamp ","Furniture","40","25","A010"

@@ -1,0 +1,9 @@
+,order_id,customer_name,product_category,sales,order_date,month_name
+0,101,Alice,Electronics,1200,2024-01-15,January
+1,102,Bob,Furniture,850,2024-01-22,January
+2,103,Charlie,Clothing,450,2024-02-05,February
+3,104,David,Electronics,2100,2024-02-18,February
+4,105,Emma,Furniture,1350,2024-03-10,March
+5,106,Frank,Clothing,700,2024-03-25,March
+6,107,Grace,Electronics,980,2024-08-04,August
+7,108,Henry,Furniture,1600,2024-04-19,April

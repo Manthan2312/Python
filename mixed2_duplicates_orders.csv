@@ -1,0 +1,10 @@
+order_id, customer_id , order_date, spend, product_category 
+O501, C101, 2026-05-01, 150.00, Electronics
+O502, C102, 2026-05-02, 45.50, Apparel
+O503, C101, 2026-05-03, 85.00, Electronics
+O504, C103, 2026-05-04, 200.00, Home
+O505, C104, 2026-05-05, 120.00, Apparel
+O505, C104, 2026-05-05, 120.00, Apparel
+O506, C101, 2026-05-06, 30.00, Home
+O507, C105, 2026-05-07, 95.00, Electronics
+O508, C102, 2026-05-08, 60.00, Home

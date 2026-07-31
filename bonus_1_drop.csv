@@ -1,0 +1,6 @@
+,CustomerID,CustomerName,Email,City,Purchase
+0,101,Alice Johnson,alice@email.com,New York,9300
+1,102,Bob Smith,bob@email.com,Los Angeles,7500
+3,104,Diana Prince,diana@email.com,Houston,6000
+2,103,Charlie Brown,charlie@email.com,Chicago,4000
+4,105,Evan Wright,evan@email.com,Miami,1200

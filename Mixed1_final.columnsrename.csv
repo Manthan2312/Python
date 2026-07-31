@@ -1,0 +1,5 @@
+,emp_id,employee_name,salary,department,bonus,net_salary
+0,101,Alice Smith,85000.0,HR,8500.0,93500.0
+1,102,Bob Johnson,90000.0,IT,9000.0,99000.0
+2,103,Charlie Brown,90000.0,Unknows,9000.0,99000.0
+3,104,Diana Prince,120000.0,Finance,12000.0,132000.0

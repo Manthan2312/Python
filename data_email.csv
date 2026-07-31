@@ -1,0 +1,6 @@
+CustomerID,Name,Email,City,Purchase
+C101," rahul shah ",rahul@gmail.com,Ahmedabad,4500
+C102,"MANTHAN PATEL",manthan@yahoo.com,Surat,6500
+C103," PRIYA Patel ",priya@gmail.com,Ahmedabad,NaN
+C104,"NEHA SHAH",neha@gmail.com,Rajkot,8200
+C105,"rahul shah ",rahul@gmail.com,Ahmedabad,4500

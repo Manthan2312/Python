@@ -1,0 +1,6 @@
+,EmployeeID,Name,Department,Salary,Bonus,Net Salary
+0,101,Alice,Engineering,85000.0,8500.0,93500.0
+1,102,Bob,Marketing,90000.0,9000.0,99000.0
+2,103,Charlie,Engineering,70000.0,7000.0,77000.0
+3,104,David,Sales,55000.0,5500.0,60500.0
+4,105,Eva,HR,75000.0,7500.0,82500.0

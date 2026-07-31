@@ -1,0 +1,5 @@
+,EmpID,Name,Department,City,Age,Salary,Bonus,Net Salary
+0,101,Rahul Shah,IT,Ahmedabad,24.0,50000.0,5000.0,55000.0
+1,102,Manthan Patel,HR,Surat,26.5,62000.0,6200.0,68200.0
+2,103,Neha Patel,Finance,Ahmedabad,28.0,56000.0,5600.0,61600.0
+3,104,Priya Shah,IT,Rajkot,30.0,70000.0,7000.0,77000.0

@@ -1,0 +1,21 @@
+EmpID,EmployeeName,Department,Experience,City
+101,Alice,HR,2,New York
+102,Bob,IT,5,Chicago
+103,Charlie,Finance,7,Houston
+104,David,IT,4,Seattle
+105,Eva,HR,3,Boston
+106,Frank,Finance,1,Chicago
+107,Grace,IT,6,
+108,Helen,Marketing,4,Los Angeles
+109,Ian,HR,8,New York
+110,Jack,Finance,5,Dallas
+111,Kate,Marketing,2,Miami
+112,Liam,IT,3,Seattle
+113,Mia,Finance,,Houston
+114,Noah,HR,4,Boston
+115,Olivia,IT,9,Chicago
+116,Peter,Marketing,5,Denver
+117,Quinn,HR,2,New York
+118,Rachel,Finance,6,Dallas
+119,Sam,IT,3,Austin
+120,Tina,HR,7,Boston

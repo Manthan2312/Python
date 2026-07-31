@@ -1,0 +1,16 @@
+,OrderID,CustomerName,City,Department,Product,Category,OrderDate,Quantity,Price,Discount,PaymentMode,Year,Month Number,Month Name,Day,Day Name,Quarter,Weekend Days,Weekend,Total Amount,Discount Amount,Net Sales,Sales Category
+0,O1001,Rahul Patel,Ahmedabad,Electronics,Laptop,Computers,2025-01-05,2,55000,10.0,UPI,2025,1,January,5,Sunday,1,6,True,110000,11000.0,99000.0,High
+1,O1002,Neha Shah,Surat,Fashion,T-Shirt,Clothing,2025-01-08,5,1200,9.0,Card,2025,1,January,8,Wednesday,1,2,False,6000,540.0,5460.0,Medium
+2,O1003,Amit Mehta,Ahmedabad,Electronics,Mouse,Accessories,2025-01-10,3,700,5.0,Cash,2025,1,January,10,Friday,1,4,False,2100,105.0,1995.0,Medium
+3,O1004,Priya Shah,Rajkot,Grocery,Rice,Food,2025-01-15,8,120,9.0,UPI,2025,1,January,15,Wednesday,1,2,False,960,86.4,873.6,Medium
+4,O1005,Manthan Patel,Ahmedabad,Electronics,Keyboard,Accessories,2025-01-18,4,1500,10.0,Card,2025,1,January,18,Saturday,1,5,True,6000,600.0,5400.0,Medium
+5,O1006,Karan Patel,Vadodara,Fashion,Jeans,Clothing,2025-02-02,2,2500,15.0,Cash,2025,2,February,2,Sunday,1,6,True,5000,750.0,4250.0,Medium
+6,O1007,Riya Shah,Ahmedabad,Grocery,Oil,Food,2025-02-05,3,1800,9.0,UPI,2025,2,February,5,Wednesday,1,2,False,5400,486.0,4914.0,Medium
+7,O1008,Sneha Patel,Surat,Electronics,Monitor,Computers,2025-02-10,1,14000,12.0,Card,2025,2,February,10,Monday,1,0,False,14000,1680.0,12320.0,Medium
+8,O1009,Jay Patel,Rajkot,Fashion,Shoes,Footwear,2025-02-12,2,3200,10.0,Cash,2025,2,February,12,Wednesday,1,2,False,6400,640.0,5760.0,Medium
+9,O1010,Harsh Mehta,Ahmedabad,Electronics,Printer,Computers,2025-02-15,1,9000,9.0,UPI,2025,2,February,15,Saturday,1,5,True,9000,810.0,8190.0,Medium
+10,O1011,Tirth Shah,Vadodara,Grocery,Sugar,Food,2025-02-20,5,60,5.0,Cash,2025,2,February,20,Thursday,1,3,False,300,15.0,285.0,Medium
+11,O1012,Khushbu Patel,Ahmedabad,Fashion,Saree,Clothing,2025-02-25,2,4500,8.0,Card,2025,2,February,25,Tuesday,1,1,False,9000,720.0,8280.0,Medium
+12,O1013,Aastha Shah,Surat,Electronics,SSD,Accessories,2025-03-01,3,6500,10.0,UPI,2025,3,March,1,Saturday,1,5,True,19500,1950.0,17550.0,Medium
+13,O1014,Vikas Patel,Rajkot,Electronics,Laptop,Computers,2025-03-05,1,60000,9.0,Card,2025,3,March,5,Wednesday,1,2,False,60000,5400.0,54600.0,High
+14,O1015,Dhruv Shah,Ahmedabad,Grocery,Wheat,Food,2025-03-08,6,80,5.0,Cash,2025,3,March,8,Saturday,1,5,True,480,24.0,456.0,Medium

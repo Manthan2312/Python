@@ -1,0 +1,21 @@
+EmployeeID,Name,Email,Department,Salary
+101,John Doe,john.doe@company.com,Sales,65000
+102,Jane Smith,jane.smith@company.com,Marketing,72000
+103,Robert Johnson,robert.j@company.com,IT,85000
+104,Emily Davis,emily.d@company.com,HR,58000
+105,Michael Brown,michael.b@company.com,Finance,90000
+106,William Wilson,william.w@company.com,IT,95000
+107,David Taylor,david.t@company.com,Sales,62000
+108,Richard Thomas,richard.t@company.com,Marketing,69000
+109,Joseph Moore,joseph.m@company.com,Finance,88000
+110,John Doe,john.d2@company.com,HR,55000
+111,Charles Martin,charles.m@company.com,Sales,61000
+112,Christopher Lee,chris.l@company.com,IT,78000
+113,Jessica Thompson,jessica.t@company.com,Marketing,74000
+114,Daniel White,daniel.w@company.com,Finance,92000
+115,Matthew Harris,matthew.h@company.com,HR,57000
+116,Jane Smith,jane.s2@company.com,Sales,63000
+117,Mark Lewis,robert.j@company.com,IT,80000
+118,Paul Clark,emily.d@company.com,Marketing,71000
+119,Steven Walker,steven.w@company.com,Finance,83000
+120,Andrew Hall,andrew.h@company.com,HR,59000

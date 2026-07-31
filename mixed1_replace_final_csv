@@ -1,0 +1,13 @@
+,employee_id,department,salary,age,city
+5,106,Information Technology,65000.0,28,San Francisco
+8,109,Information Technology,62000.0,31,San Francisco
+3,104,Information Technology,60000.0,30,San Francisco
+2,103,Sales,52000.0,28,New York
+9,110,Sales,51000.0,27,Boston
+4,105,Human Resource,50500.0,27,Chicago
+11,112,Information Technology,50500.0,32,New York
+0,101,Sales,50000.0,25,New York
+6,107,Sales,48000.0,26,Boston
+7,108,Human Resource,47000.0,29,Unknown
+10,111,Human Resource,46000.0,28,Chicago
+1,102,Human Resource,45000.0,28,Chicago

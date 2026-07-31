@@ -1,0 +1,16 @@
+EmpID,Name,Department,City,Age,Gender
+E101," Rahul Shah ",IT,Ahmedabad,24,M
+E102,"NEHA PATEL",HR,Surat,29,F
+E103," amit patel ",Finance,Ahmedabad,,M
+E104,"Priya Shah",Sales,Rajkot,31,F
+E105,"MANTHAN PATEL",IT,Ahmedabad,22,M
+E106,"Karan Mehta",Marketing,Surat,27,M
+E107," Riya Patel",HR,Vadodara,,F
+E108,"Sneha Shah ",Finance,Ahmedabad,30,F
+E109,"Vikas Patel",Sales,Rajkot,28,M
+E110,"Aastha Patel",IT,Ahmedabad,25,F
+E111,"Jay Shah",Marketing,Surat,32,M
+E112,"Khushbu Shah",HR,Ahmedabad,26,F
+E113,"Harsh Patel",Finance,,29,M
+E114,"Tirth Dabhi",IT,Rajkot,27,M
+E115,"Shukan Soni",Sales,Vadodara,24,F
