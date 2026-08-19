@@ -1,0 +1,36 @@
+Emp_ID,Name,Department,Salary,Joining_Date,Skills,Experience,City,Manager_ID
+101,Alice,IT,75000,2021-01-15,"Python,SQL,Excel",3,Ahmedabad,M01
+102,Bob,HR,52000,15/02/2020,"Excel,Communication",5,Surat,M02
+103,Charlie,IT,68000,03-18-2022,"Python,Power BI",2,Vadodara,M01
+104,David,Finance,80000,2020/07/10,"SQL,Excel",6,Rajkot,M03
+105,Eva,IT,,2019-05-25,"Python,SQL,Machine Learning",7,Ahmedabad,M01
+106,Frank,Sales,45000,11/08/2021,"Communication,Negotiation",2,Surat,M04
+107,Grace,IT,92000,2022-12-01,"Python,SQL",4,Ahmedabad,M01
+108,Helen,Finance,78000,2018-09-17,"Excel,Power BI",8,Vadodara,M03
+109,Ian,HR,54000,2019/10/21,"Communication,Excel",4,,M02
+110,Jack,IT,65000,2021-04-14,"Python,Excel",3,Rajkot,M01
+111,Kate,Sales,47000,2020-11-30,"Negotiation,Excel",2,Surat,M04
+112,Liam,Finance,,2017-06-18,"SQL,Power BI",9,Ahmedabad,M03
+113,Mia,IT,89000,13-03-2022,"Python,SQL,Docker",5,Vadodara,M01
+114,Noah,HR,56000,2021/09/12,"Communication,Excel",3,Rajkot,M02
+115,Olivia,IT,73000,2019-02-28,"Python,Machine Learning",4,Ahmedabad,M01
+116,Paul,Sales,49000,2022-01-09,"Negotiation,Communication",2,Surat,M04
+117,Quinn,Finance,81000,2018/04/05,"SQL,Excel",7,Vadodara,M03
+118,Ryan,IT,76000,2020-08-16,"Python,SQL,Power BI",4,Ahmedabad,M01
+119,Sophia,IT,84000,2019/12/11,"Python,SQL",6,Rajkot,M01
+120,Tom,HR,53000,2021-05-07,"Communication,Excel",3,Ahmedabad,M02
+121,Uma,IT,69000,2020-06-25,"Python,SQL",3,Ahmedabad,M01
+122,Victor,Finance,77000,2018-08-19,"Excel,SQL",8,Surat,M03
+123,Wendy,Sales,46000,2021/07/14,"Negotiation,Excel",2,Rajkot,M04
+124,Xavier,IT,98000,2017-03-29,"Python,SQL,Azure",9,Vadodara,M01
+125,Yara,IT,71000,2022-10-10,"Python,Excel",2,,M01
+126,Zack,Finance,82000,2019-01-22,"SQL,Power BI",6,Ahmedabad,M03
+127,Alice,IT,75000,2021-01-15,"Python,SQL,Excel",3,Ahmedabad,M01
+128,Ben,it,70000,2021-02-11,"python,sql",3,Ahmedabad,M01
+129,Cara,HR,55000,2020-12-05,"Excel,Communication",4,Surat,
+130,Dan,Finance,81000,, "SQL,Excel",7,Rajkot,M03
+131,Ethan,IT,87000,2021/11/15,"Python,SQL,Git",5,Ahmedabad,M01
+132,Fiona,IT,76000,2020-03-18,"Python,SQL,Power BI",4,Ahmedabad,M01
+133,Gary,Sales,,2022-02-20,"Communication,Negotiation",1,Vadodara,M04
+134,Harry,IT,91000,2019-07-07,"Python, Docker,SQL",6,Surat,M01
+135,Ivy,Finance,83000,2018-05-11,"SQL,Power BI,Excel",8,Ahmedabad,M03

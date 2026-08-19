@@ -1,0 +1,52 @@
+customer_id,name,age,gender,city,email,phone,purchase_date,product,quantity,price,total_amount,payment_method,returned
+1001, John Smith ,25,Male,Ahmedabad,john@gmail.com,9876543210,2026-01-15,Laptop,1,55000,55000,Credit Card,No
+1002,Priya Shah,29,Female,Ahmedabad,priya@gmail.com,98765 43210,15/01/2026,Mouse,2,750,1500,cash,N
+1003,RAHUL PATEL,34,M,Surat,rahul@gmail,9988776655,Jan 18 2026,Keyboard,1,1200,1200,UPI,No
+1004, Neha Desai, ,Female,Vadodara,neha@gmail.com,,2026/01/20,Monitor,1,12500,12500,UPI,Yes
+1005,Amit Mehta,41,male,ahmedabad, amit@gmail.com ,9123456789,20-01-2026,Laptop,1,55000,55000,UPI,No
+1006,Sneha Patel,27,F,Surat,sneha@gmail.com,9000011111,2026-01-22,Mouse,,750,,Cash,No
+1007,rohit joshi,31,Male,Ahmedabad,rohit@gmail.com,9000022222,22/01/26,Keyboard,3,1200,3600,upi,Y
+1008,Karan Shah,150,Male,Mumbai,karan@gmail.com,9000033333,2026-01-25,Monitor,1,12500,12500,Credit Card,No
+1009,Meena Patel,38,Female,Surat,meena@gmail.com,9000044444,25-Jan-2026,Laptop,2,55000,110000,Debit Card,No
+1010,Raj Kumar,22,Male,Delhi,raj@gmail.com,9000055555,2026-01-27,Mouse,-2,750,-1500,Cash,Yes
+1011,Anjali Shah,28,Female,Ahmedabad,anjali@gmail.com,9000066666,27/01/2026,Keyboard,1,1200,1200,UPI,No
+1012, Dev Patel,33,Male, Ahmedabad,dev@gmail.com,9000077777,2026-01-30,Monitor,2,12500,25000,upi,no
+1013,Simran Kaur,26,Female,Delhi,simran@gmail.com,9000088888,30-01-2026,Laptop,1,55000,55000,Credit Card,N
+1014,Arjun Singh,45,M,Delhi,arjun@gmail.com,9000099999,Feb 2 2026,Mouse,5,750,3750,Cash,No
+1015,isha modi,19,Female,Mumbai,isha@gmail,9000012345,2026-02-03,Keyboard,1,1200,1200,UPI,No
+1016,Vivek Shah,37,Male,Surat,vivek@gmail.com,9000012346,03/02/2026,Monitor,1,12500,12500,Debit Card,Yes
+1017,Manish Patel, ,Male,Ahmedabad,manish@gmail.com,9000012347,2026-02-05,Laptop,1,55000,55000,Credit Card,No
+1018,Riya Mehta,24,Female,Vadodara,riya@gmail.com,9000012348,05-02-2026,Mouse,2,750,1500,Cash,No
+1019,Jay Shah,30,Male,Ahmedabad,jay@gmail.com,9000012349,2026/02/07,Keyboard,2,1200,2400,UPI,Yes
+1020,Pooja Patel,32,Female,Surat,pooja@gmail.com,9000012350,Feb 8 2026,Monitor,1,12500,12500,upi,No
+1021,Harsh Desai,28,Male,Vadodara,harsh@gmail.com,9000012351,08/02/2026,Laptop,1,55000,55000,Credit card,No
+1022,Nisha Shah,35,Female,Ahmedabad,nisha@gmail.com,9000012352,2026-02-10,Mouse,4,750,3000,CASH,N
+1023,Parth Patel,29,M,Ahmedabad,parth@gmail.com,9000012353,10-02-2026,Keyboard,2,1200,2400,UPI,No
+1024, Komal Joshi ,27,Female,Surat,komal@gmail.com,9000012354,2026-02-12,Monitor,1,12500,12500,Debit Card,No
+1025,Sagar Shah,44,Male,Mumbai,sagar@gmail.com,9000012355,12/02/2026,Laptop,1,55000,55000,Credit Card,Yes
+1026,Divya Patel,23,Female,Ahmedabad,divya@gmail.com,9000012356,2026-02-15,Mouse,2,750,1500,UPI,No
+1027,Rakesh Kumar,39,Male,Delhi,rakesh@gmail.com,9000012357,15-Feb-2026,Keyboard,1,1200,1200,Cash,No
+1028,Tina Shah,26,Female,Mumbai,tina@gmail.com,9000012358,2026-02-17,Monitor,2,12500,25000,UPI,No
+1029,Ajay Patel,36,Male,Ahmedabad,ajay@gmail.com,9000012359,17/02/26,Laptop,1,"55,000","55,000",Credit Card,No
+1030,Monika Desai,31,Female,Vadodara,monika@gmail.com,9000012360,2026/02/19,Mouse,3,750,2250,Cash,Yes
+1031,John Smith,25,Male,Ahmedabad,john@gmail.com,9876543210,2026-01-15,Laptop,1,55000,55000,Credit Card,No
+1032, Aman Verma,twenty eight,Male,Delhi,aman@gmail.com,9000012361,2026-02-20,Keyboard,2,1200,2400,UPI,No
+1033,Heena Patel,22,Female,Surat,,9000012362,20/02/2026,Mouse,1,750,750,Cash,No
+1034,Rahul Patel,34,Male,Surat,rahul@gmail.com,9000012363,2026-02-22,Monitor,1,12500,12500,UPI,No
+1035,Shreya Shah,29,Female,Ahmedabad,shreya@gmail.com,9000012364,22-02-2026,Laptop,1,55000,55000,Credit Card,No
+1036,nikhil mehta,40,male,ahmedabad,nikhil@gmail.com,9000012365,Feb 24 2026,Mouse,2,750,1500,cash,N
+1037,Payal Joshi,27,Female,Vadodara,payal@gmail.com,9000012366,2026-02-25,Keyboard,1,1200,1200,UPI,No
+1038, Sameer Khan,33,Male,Mumbai,sameer@gmail.com,9000012367,25/02/2026,Monitor,1,12500,12500,Debit Card,No
+1039,Kirti Patel,30,Female,Ahmedabad,kirti@gmail.com,9000012368,2026/02/27,Laptop,2,55000,110000,Credit Card,Yes
+1040,Devang Shah,52,Male,Ahmedabad,devang@gmail.com,9000012369,27-Feb-2026,Mouse,1,750,750,Cash,No
+1041,Rina Patel,28,Female,Surat,rina@gmail.com,9000012370,2026-03-01,Keyboard,3,1200,3600,UPI,No
+1042,Akash Mehta,35,Male,Vadodara,akash@gmail.com,9000012371,01/03/2026,Monitor,1,12500,12500,UPI,No
+1043, Sonia Shah,24,Female,Ahmedabad,sonia@gmail.com,9000012372,2026-03-03,Laptop,1,55000,55000,Credit Card,No
+1044,Pratik Patel,29,Male,Surat,pratik@gmail.com,9000012373,03-03-2026,Mouse,2,750,1500,Cash,Yes
+1045,Mehul Desai,46,Male,Ahmedabad,mehul@gmail.com,9000012374,Mar 5 2026,Keyboard,1,1200,1200,UPI,No
+1046,Rupal Shah, ,Female,Mumbai,rupal@gmail.com,9000012375,2026-03-06,Monitor,1,12500,12500,Debit Card,No
+1047,Ankit Patel,25,Male,Ahmedabad,ankit@gmail.com,9000012376,06/03/2026,Laptop,1,55000,55000,Credit Card,No
+1048,Neha Desai,27,Female,Vadodara,neha@gmail.com,9000012377,2026-03-08,Mouse,2,750,1500,UPI,No
+1049,Rohit Joshi,31,Male,Ahmedabad,rohit@gmail.com,9000012378,08-03-2026,Keyboard,2,1200,2400,Cash,No
+1050,Priya Shah,29,Female,Ahmedabad,priya@gmail.com,9876543210,Mar 10 2026,Monitor,1,12500,12500,UPI,No
+

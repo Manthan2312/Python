@@ -57,43 +57,42 @@
 
 
 
-def greet(fn):
-    print("You are using the things")
-    fn()
-    print("Thanks you user")
-    return fn
+# def greet(fn):
+#     print("You are using the things")
+#     fn()
+#     print("Thanks you user")
+#     return fn
 
 
-@greet
-def calcualter():
-    print("Enter the choose")
-    print("1.+")
-    print("2.-")
-    print("3.*")
-    print("4./")
-    print("5.%")
-    choose=int(input("Enter The input as a number\n"))
-    # print(choose)
-    a=int(input("Enter the Number 1\n"))
-    b=int(input("Enter the Number 2\n"))
+# @greet
+# def calcualter():
+#     print("Enter the choose")
+#     print("1.+")
+#     print("2.-")
+#     print("3.*")
+#     print("4./")
+#     print("5.%")
+#     choose=int(input("Enter The input as a number\n"))
+#     # print(choose)
+#     a=int(input("Enter the Number 1\n"))
+#     b=int(input("Enter the Number 2\n"))
 
-    match choose:
-        case 1:
-            print(a+b)
-        case 2:
-            print(a-b)
-        case 3:
-            print(a*b)
-        case 4:
-            print(a/b)
-        case 5:
-            print(a%b)
-        case __:
-            print("invalid input")
+#     match choose:
+#         case 1:
+#             print(a+b)
+#         case 2:
+#             print(a-b)
+#         case 3:
+#             print(a*b)
+#         case 4:
+#             print(a/b)
+#         case 5:
+#             print(a%b)
+#         case __:
+#             print("invalid input")
         
 
 
 
-calcualter
-
+# calcualter
 

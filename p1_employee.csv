@@ -1,0 +1,32 @@
+employee_id,name,department,gender,age,salary,joining_date,city,performance_score
+E001,Amit Shah,IT,Male,28,55000,2021-06-15,Ahmedabad,8.5
+E002,Priya Patel,HR,Female,32,62000,2020-03-12,Ahmedabad,9.1
+E003,Rahul Mehta,Finance,M,41,78000,2018-07-20,Surat,7.8
+E004,Neha Joshi,IT,Female,26,48000,2022-01-10,Vadodara,8.9
+E005,Vikas Singh,Sales,Male,35,45000,2019-11-05,Ahmedabad,6.5
+E006,Anjali Desai,HR,F,29,58000,2021-08-18,Surat,8.2
+E007,Rakesh Patel,Finance,Male,,72000,2020-05-22,Ahmedabad,7.5
+E008,Meena Shah,IT,Female,38,85000,2017-02-14,Vadodara,9.5
+E009,Arjun Patel,Sales,Male,24,38000,2023-04-01,Ahmedabad,6.9
+E010,Pooja Mehta,HR,Female,31,61000,2020-09-15,Surat,8.7
+E011,Deepak Joshi,IT,Male,45,95000,2015-01-20,Ahmedabad,9.8
+E012,Nisha Patel,Finance,Female,27,52000,2022-06-12,Rajkot,8.0
+E013,Jay Shah,Sales,Male,33,47000,2021-03-08,Ahmedabad,7.2
+E014,Komal Desai,HR,Female,36,,2019-07-11,Vadodara,8.8
+E015,Sanjay Gupta,IT,Male,29,58000,2021-10-01,Ahmedabad,7.9
+E016,Riya Patel,Finance,Female,25,49000,2023-01-15,Surat,9.0
+E017,Manish Verma,Sales,Male,52,42000,2016-08-20,Rajkot,5.8
+E018,Kavita Rao,HR,Female,40,68000,2018-12-05,Ahmedabad,9.3
+E019,Akash Shah,IT,Male,30,60000,2020-11-17,Surat,8.4
+E020,Divya Joshi,Finance,Female,34,71000,2019-05-10,Vadodara,7.7
+E020,Divya Joshi,Finance,Female,34,71000,2019-05-10,Vadodara,7.7
+E021,Harsh Patel,Sales,Male,27,44000,2022-08-01,Ahmedabad,7.0
+E022,Tina Shah,IT,Female,23,41000,2024-02-10,Ahmedabad,8.1
+E023,Parth Mehta,Finance,Male,39,82000,2017-09-18,Surat,8.9
+E024,Ayesha Khan,HR,Female,30,59000,2021-12-12,Ahmedabad,9.2
+E025,Nitin Shah,Sales,Male,44,51000,2018-03-15,Rajkot,6.2
+E026,Hetal Patel,IT,Female,37,77000,2019-10-21,Vadodara,8.6
+E027,Varun Shah,Finance,Male,31,65000,2020-02-29,Ahmedabad,
+E028,Simran Kaur,HR,Female,28,56000,2022-04-15,Surat,8.3
+E029,Jay Patel,Sales,Male,29,46000,2021-07-19,Ahmedabad,7.6
+E030,,IT,Female,26,50000,2023-09-01,Ahmedabad,8.0

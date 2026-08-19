@@ -4434,7 +4434,3 @@ pd.set_option('display.width', 1000)
 # df=df.reset_index()
 # print(df)
 # df.to_csv("employee_index_final_report.csv")
-
-
-
-

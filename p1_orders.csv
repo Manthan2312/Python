@@ -1,0 +1,41 @@
+order_id,customer_id,product,category,quantity,price,order_date,payment_method,status
+O1001,C001,Laptop,Electronics,1,55000,2025-01-05,UPI,Delivered
+O1002,C002,Mouse,Electronics,2,750,2025-01-06,Credit Card,Delivered
+O1003,C003,Keyboard,Electronics,1,1200,06/01/2025,upi,delivered
+O1004,C004,Office Chair,Furniture,1,8500,2025-01-08,Cash,Pending
+O1005,C005,Desk,Furniture,1,12000,2025-01-10,Credit Card,Delivered
+O1006,C006,Notebook,Stationery,5,80,2025-01-11,UPI,Delivered
+O1007,C007,Pen,Stationery,10,20,2025-01-12,Cash,Delivered
+O1008,C008,Monitor,Electronics,2,15000,2025-01-13,UPI,Cancelled
+O1009,C009,Laptop,Electronics,1,62000,2025-01-15,Credit Card,Delivered
+O1010,C010,Chair,Furniture,2,4500,2025-01-17,UPI,Delivered
+O1011,C011,Pen,Stationery,50,18,2025-01-18,Cash,Delivered
+O1012,C012,Headphones,Electronics,1,2200,2025-01-20,UPI,Delivered
+O1013,C013,Table,Furniture,1,18000,2025-01-21,Credit Card,Pending
+O1014,C014,Notebook,Stationery,20,75,2025-01-22,upi,Delivered
+O1015,C015,Keyboard,Electronics,2,1300,2025-01-24,Credit Card,Delivered
+O1016,C016,Laptop,Electronics,1,58000,2025-01-25,UPI,Delivered
+O1017,C017,Desk,Furniture,1,,2025-01-27,Cash,Pending
+O1018,C018,Mouse,Electronics,3,700,2025-01-28,UPI,Delivered
+O1019,C019,Monitor,Electronics,1,14500,2025-02-01,Credit Card,Delivered
+O1020,C020,Pen,Stationery,100,15,2025-02-02,Cash,Delivered
+O1021,C021,Laptop,Electronics,1,61000,2025-02-03,UPI,Delivered
+O1022,C022,Chair,Furniture,4,4200,2025-02-05,Credit Card,Delivered
+O1023,C023,Desk,Furniture,2,11500,2025-02-06,UPI,Cancelled
+O1024,C024,Notebook,Stationery,10,80,2025-02-08,Cash,Delivered
+O1025,C025,Laptop,Electronics,1,999999,2025-02-09,UPI,Delivered
+O1026,C026,Headphones,Electronics,,2500,2025-02-10,Credit Card,Delivered
+O1027,C027,Mouse,Electronics,5,650,2025-02-12,UPI,Delivered
+O1028,C028,Table,Furniture,1,17500,2025-02-14,Credit Card,Pending
+O1029,C029,Pen,Stationery,25,20,2025-02-15,Cash,Delivered
+O1030,C030,Monitor,Electronics,1,15500,2025-02-18,UPI,Delivered
+O1031,C001,Laptop,Electronics,1,55000,2025-01-05,UPI,Delivered
+O1032,C003,Mouse,Electronics,two,700,2025-02-20,UPI,Delivered
+O1033,C005,Desk,Furniture,1,12000,2025-02-21,Credit Card,delivered
+O1034,C009,Keyboard,Electronics,3,1100,2025-02-22,UPI,Delivered
+O1035,C012,Headphones,Electronics,2,2100,2025-02-24,upi,Delivered
+O1036,C015,Notebook,Stationery,10,80,2025-02-25,Cash,Delivered
+O1037,C018,Chair,Furniture,1,4700,2025-02-27,Credit Card,Delivered
+O1038,C021,Laptop,Electronics,1,60500,2025-03-01,UPI,Pending
+O1039,C023,Monitor,Electronics,1,15000,2025-03-02,Credit Card,Delivered
+O1040,C027,Pen,Stationery,30,18,2025-03-04,Cash,Delivered

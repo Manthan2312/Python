@@ -1,0 +1,14 @@
+employee_id,employee_name,department,salary,skills
+E001,Aarav,Sales,52000,Negotiation;CRM;Excel
+E002,Diya,Sales,58000,Excel;Power BI;Communication
+E003,Rohan,Marketing,61000,SEO;Analytics;Content
+E004,Meera,HR,55000,Recruitment;Communication;Excel
+E005,Kabir,Sales,67000,CRM;Negotiation;Leadership
+E006,Anaya,Finance,72000,Excel;Accounting;Power BI
+E007,Arjun,Marketing,64000,Content;SEO;Social Media
+E008,Ishita,Finance,76000,Accounting;Excel;Analytics
+E009,Vivaan,Sales,60000,CRM;Excel;Communication
+E010,Sara,HR,57000,Recruitment;Payroll;Excel
+E011,Aditya,Sales,69000,Negotiation;Leadership;CRM
+E012,Kiara,Marketing,62000,Analytics;Content;SEO
+E009,Vivaan,Sales,60000,CRM;Excel;Communication

@@ -1302,6 +1302,1054 @@
 # #i did not creates the sheets because of the some reason please undeestand that
 
 
+#-------------------------------------------------------------------------------
+# import pandas as pd
+#
+# try:
+#     emp=pd.read_csv("interview_emp.csv")
+#     salary=pd.read_csv("interview_salary.csv")
+#     performance=pd.read_csv("interview_performance.csv")
+# except Exception as e:
+#     print(e)
+#
+# # print(emp.info())
+# # print(emp.head())
+# # print(emp.tail())
+# # print(emp.describe())
+# # print(emp.shape)
+# # print(emp.columns)
+# # print(emp.dtypes)
+# # print(emp.isna().sum())
+# # print(emp.duplicated().sum())
+#
+# # print(salary.info())
+# # print(salary.head())
+# # print(salary.tail())
+# # print(salary.describe())
+# # print(salary.shape)
+# # print(salary.columns)
+# # print(salary.dtypes)
+# # print(salary.isna().sum())
+# # print(salary.duplicated().sum())
+#
+# # print(performance.info())
+# # print(performance.head())
+# # print(performance.tail())
+# # print(performance.describe())
+# # print(performance.shape)
+# # print(performance.columns)
+# # print(performance.dtypes)
+# # print(performance.isna().sum())
+# # print(performance.duplicated().sum())
+#
+# emp.columns=emp.columns.str.strip().str.lower().str.replace(" ","_")
+# salary.columns=salary.columns.str.strip().str.lower().str.replace(" ","_")
+# performance.columns=performance.columns.str.strip().str.lower().str.replace(" ","_")
+#
+#
+# emp=emp.rename(columns={
+#     'employee_name':"name",
+#     'dept_name':"department"
+# })
+# emp["joining_date"]=pd.to_datetime(emp["joining_date"])
+# emp["gender"]=emp["gender"].str.strip().str.title().replace({
+#     "M":"Male",
+#     "F":"Female"
+# })
+# emp["department"]=emp["department"].str.strip().str.title().replace({
+#     "It":"IT",
+#     "Hr":"HR",
+#     "Human Resources":"HR"
+# })
+# emp["city"]=emp["city"].fillna("Unknown")
+# emp["salary"]=emp["salary"].fillna(emp["salary"].median())
+# print(emp["department"].unique())#to check our changes means replace work or check to other values
+# print(emp["gender"].unique())#to check our changes means replace work or check to other values
+#
+# salary=salary.rename(columns={
+#     "emp_id":"employee_id",
+#     "attendance_percentage":"attendance_%"
+# })
+# salary["attendance_%"]=salary["attendance_%"].fillna(salary["attendance_%"].mean())
+# salary=salary.drop_duplicates()
+#
+# performance=performance.rename(columns={
+#     "id_employee":"employee_id",
+#     "performance_rating":"rating"
+# })
+# performance["rating"]=performance["rating"].fillna(performance["rating"].mean())
+# performance=performance.drop_duplicates()
+#
+#
+# me=pd.merge(emp,salary,on="employee_id",how="inner")
+# df=pd.merge(me,performance,on="employee_id",how="inner")
+# print(df.info())
+# print(df.columns)
+# print(df.dtypes)
+#
+# df["total_compensation"]=df["salary"]+df["bonus"]
+# #attendance_% is already thier
+# df["salary_category"]=pd.cut(df["salary"],
+# bins=[58000,80000,100000,float("inf")],
+# labels=["Low","Medium","High"],
+# include_lowest=True)
+# df["salary_quartile"]=pd.qcut(df["salary"],
+#                               q=4,
+#                               labels=["Q1","Q2","Q3","Q4"])
+# df["performance_level"]=pd.cut(df["rating"],
+#                                bins=[0,3,4,float("inf")],
+#                                labels=["Poor","Average","High"])
+# df["joining_year"]=df["joining_date"].dt.year
+# df["joining_month"]=df["joining_date"].dt.month_name()
+# df["joining_quarter"]=df["joining_date"].dt.quarter
+# df["experience"]=2026-df["joining_year"]
+# df["experience_band"]=df["experience"].apply(lambda x:"Junior" if x<=2 else("Under-qualified" if x<5 else "Senior"))
+# df["department_average_salary"]=df.groupby("department")["salary"].transform("mean")
+# df["department_total_salary"]=df.groupby("department")["salary"].transform("sum")
+# df["salary_gap"]=df["salary"]-df["department_average_salary"]
+# df["salary_contribution_%"]=df["salary"]/df["department_total_salary"]*100
+# # print(df.groupby("department")["salary_contribution_%"].sum()) # to check df["salary_contribution_%"] is right
+# df["company_salary_rank"]=df["salary"].rank(ascending=False,method="dense")
+# df["department_salary_rank"]=df.groupby("department")["salary"].rank(ascending=False,method="dense")
+# df["Rating_Rank"]=df["company_salary_rank"].apply(lambda x:3 if x>=8 else(2 if x>3 else 1))
+# df["Top Performer Flag"]=df["Rating_Rank"].apply(lambda x:"Low" if x==3 else("Medium" if x==2 else "Top"))
+# print(df.corr(numeric_only=True))
+# data = df.select_dtypes(include=["number"])
+# print(data.cov())
+# print(df["salary"].corr(df["experience"]))
+# print(df["salary"].corr(df["rating"]))
+# print(df["bonus"].corr(df["salary"]))
+# matrix_corr=df.corr(numeric_only=True)["salary"]
+# matrix_corr=matrix_corr.drop("salary").idxmax()
+# print(matrix_corr) #answer is : total_compensation 0.999518
+# df["rolling_avrage_salary"]=df["salary"].rolling(3,min_periods=1).mean()
+# df["rolling_avrage_bonus"]=df["bonus"].rolling(3,min_periods=1).mean()
+# df["rolling_avrage_rating"]=df["rating"].rolling(3,min_periods=1).mean()
+# print(df)
+# it_average = df[df["department"] == "IT"]["salary"].mean()
+# print(df.query("department == 'IT' and salary > @it_average").reset_index())
+# print(df.query("performance_level=='High'").reset_index()) #i have not the Employees with Excellent rating
+# print(df.query("`attendance_%`>90").reset_index())
+# print(df.query("salary_category=='High'").reset_index())
+# print(df.query("joining_year<2022").reset_index())
+#
+# department_wise=df.groupby("department")["salary"].agg(["mean","max","min","count"])
+# print(department_wise)
+# department_wise_avrage_rating=df.groupby("department")["rating"].agg("mean")
+# print(department_wise_avrage_rating)
+# department_wise_avrage_attendance=df.groupby("department")["attendance_%"].agg("mean")
+# print(department_wise_avrage_attendance)
+# pivot_table1=df.pivot_table(index="department",columns="city",values="salary",aggfunc="mean",fill_value=0)
+# print(pivot_table1)
+# pivot_table2=df.pivot_table(index="department",columns="salary_category",values="employee_id",aggfunc="count",fill_value=0)
+# print(pivot_table2)
+# pivot_table3=df.pivot_table(index="joining_year",columns="department",values="rating",aggfunc="mean",fill_value=0)
+# print(pivot_table3)
+#
+# crosstab1=pd.crosstab(index=df["department"],columns=df["gender"])
+# print(crosstab1)
+# crosstab2=pd.crosstab(index=df["department"],columns=df["performance_level"])
+# print(crosstab2)
+# crosstab3=pd.crosstab(index=df["city"],columns=df["salary_category"])
+# print(crosstab3)
+#
+# print(df.groupby("department")["salary"].mean().idxmax())
+# print(df.groupby("city")["rating"].mean().idxmax())
+# print(df.groupby("department")["total_compensation"].sum().idxmax())
+# print(df.nlargest(1,"total_compensation")[["employee_id","name","department","salary","total_compensation"]])
+# print(df.nlargest(1,"rating")[["employee_id","name","department","salary","rating"]])
+# print(df["salary_category"].value_counts().idxmax())
+# print(df.groupby("department")["rating"].mean().idxmax())#i do not have the performance in int so i used the rating
+# print(df["joining_year"].value_counts().idxmax())
+# print(df["city"].value_counts().idxmax())
+# print(df.groupby("department")["salary"].sum().idxmax())
+#
+#
+# Total_Employees=df["employee_id"].count()
+# print(Total_Employees)
+# Total_Salary =df["salary"].sum()
+# print(Total_Salary)
+# Average_Salary=df["salary"].mean()
+# print(Average_Salary)
+# Average_Rating=df["rating"].mean()
+# print(Average_Rating)
+# Average_Attendance=df["attendance_%"].mean()
+# print(Average_Attendance)
+# Highest_Paid_Department = df.groupby("department")["salary"].mean().idxmax()
+# print(Highest_Paid_Department)
+# Top_Employee = df.nlargest(1,"rating")
+# print(Top_Employee)
+# Best_Performing_Department=df.groupby("department")["rating"].mean().idxmax()
+# print(Best_Performing_Department)
+# Most_Common_Salary_Category =df["salary_category"].value_counts().idxmax()
+# print(Most_Common_Salary_Category)
+# Highest_Salary=df["salary"].max()
+# print(Highest_Salary)
+# Lowest_Salary=df["salary"].min()
+# print(Lowest_Salary)
+#
+#
+# kpi_data = {
+#     "Metric Name": [
+#         "Total Employees",
+#         "Total Salary Expenditure",
+#         "Average Salary",
+#         "Average Performance Rating",
+#         "Average Attendance %",
+#         "Highest Paid Department (Avg)",
+#         "Highest Revenue/Compensation Dept",
+#         "Best Performing Department (Avg Rating)",
+#         "Most Common Salary Category",
+#         "Highest Individual Salary",
+#         "Lowest Individual Salary",
+#         "Top Employee (Highest Compensation)",
+#         "Top Rated Employee",
+#         "Peak Hiring Year",
+#         "Most Common Employee City"
+#     ],
+#     "Value": [
+#         Total_Employees,
+#         Total_Salary,
+#         Average_Salary,
+#         Average_Rating,
+#         Average_Attendance,
+#         Highest_Paid_Department,
+#         df.groupby("department")["total_compensation"].sum().idxmax(),
+#         Best_Performing_Department,
+#         Most_Common_Salary_Category,
+#         Highest_Salary,
+#         Lowest_Salary,
+#         df.nlargest(1,"total_compensation")["name"].values[0],
+#         df.nlargest(1,"rating")["name"].values[0],
+#         df["joining_year"].value_counts().idxmax(),
+#         df["city"].value_counts().idxmax()
+#     ]
+# }
+#
+# business_summary_df = pd.DataFrame(kpi_data)
+#
+#
+#
+# try:
+#     with pd.ExcelWriter("HR_Analytics_Report.xlsx", engine="openpyxl") as writer:
+#
+#
+#         df.to_excel(writer, sheet_name="Clean Data", index=False)
+#
+#         # Sheet 2: Department Summary (MUST keep index=True so department names show!)
+#         department_wise.to_excel(writer, sheet_name="Department Summary", index=True)
+#
+#         start_row = 0
+#         pivots = [
+#             ("Average Salary by Department & City", pivot_table1),
+#             ("Employee Count by Department & Salary Category", pivot_table2),
+#             ("Average Rating by Joining Year & Department", pivot_table3)
+#         ]
+#         for title, pivot in pivots:
+#             pd.DataFrame([title]).to_excel(writer, sheet_name="Pivot Tables", startrow=start_row, index=False, header=False)
+#             pivot.to_excel(writer, sheet_name="Pivot Tables", startrow=start_row + 1, index=True)
+#             start_row += len(pivot) + 4
+#         start_row = 0
+#         crosstabs = [
+#             ("Gender Distribution by Department", crosstab1),
+#             ("Performance Level Distribution by Department", crosstab2),
+#             ("Salary Category Distribution by City", crosstab3)
+#         ]
+#         for title, x_tab in crosstabs:
+#             pd.DataFrame([title]).to_excel(writer, sheet_name="Crosstabs", startrow=start_row, index=False, header=False)
+#             x_tab.to_excel(writer, sheet_name="Crosstabs", startrow=start_row + 1, index=True)
+#             start_row += len(x_tab) + 4
+#
+#
+#         business_summary_df.to_excel(writer, sheet_name="Business Summary", index=False)
+#
+#     print("Excel file 'HR_Analytics_Report.xlsx' created successfully with all 5 sheets!")
+#
+# except Exception as e:
+#     print(f"An error occurred: {e}")
+
+#-------------------------------------------------------------------------------------------------------------
+#
+# import pandas as pd
+#
+# pd.set_option('display.max_columns', None)
+# pd.set_option('display.width', 1000)
+#
+# try:
+#     emp=pd.read_csv("iemployees.csv")
+#     attendance=pd.read_csv("attendance.csv")
+#     customer=pd.read_csv("customers.csv")
+#     product=pd.read_csv("products.csv")
+#     sale = pd.read_csv("sales.csv")
+#     price_history = pd.read_csv("price_history.csv")
+#     target=pd.read_csv("targets.csv")
+# except Exception as e:
+#     print(e)
+#
+# # print(emp.info())
+# # print(emp.head())
+# # print(emp.tail())
+# # print(emp.describe())
+# # print(emp.columns)
+# # print(emp.dtypes)
+# # print(emp.size)
+# # print(emp.shape)
+# # print(emp.isna().sum())
+# # print(emp.duplicated().sum())
+# #
+# # print(customer.info())
+# # print(customer.head())
+# # print(customer.tail())
+# # print(customer.describe())
+# # print(customer.columns)
+# # print(customer.dtypes)
+# # print(customer.size)
+# # print(customer.shape)
+# # print(customer.isna().sum())
+# # print(customer.duplicated().sum())
+# #
+# # print(attendance.info())
+# # print(attendance.head())
+# # print(attendance.tail())
+# # print(attendance.describe())
+# # print(attendance.columns)
+# # print(attendance.dtypes)
+# # print(attendance.size)
+# # print(attendance.shape)
+# # print(attendance.isna().sum())
+# # print(attendance.duplicated().sum())
+# #
+# # print(product.info())
+# # print(product.head())
+# # print(product.tail())
+# # print(product.describe())
+# # print(product.columns)
+# # print(product.dtypes)
+# # print(product.size)
+# # print(product.shape)
+# # print(product.isna().sum())
+# # print(product.duplicated().sum())
+# #
+# # print(price_history.info())
+# # print(price_history.head())
+# # print(price_history.tail())
+# # print(price_history.describe())
+# # print(price_history.columns)
+# # print(price_history.dtypes)
+# # print(price_history.size)
+# # print(price_history.shape)
+# # print(price_history.isna().sum())
+# # print(price_history.duplicated().sum())
+# #
+# # print(sale.info())
+# # print(sale.head())
+# # print(sale.tail())
+# # print(sale.describe())
+# # print(sale.columns)
+# # print(sale.dtypes)
+# # print(sale.size)
+# # print(sale.shape)
+# # print(sale.isna().sum())
+# # print(sale.duplicated().sum())
+# #
+# # print(target.info())
+# # print(target.head())
+# # print(target.tail())
+# # print(target.describe())
+# # print(target.columns)
+# # print(target.dtypes)
+# # print(target.size)
+# # print(target.shape)
+# # print(target.isna().sum())
+# # print(target.duplicated().sum())
+#
+#
+# emp.columns=emp.columns.str.strip().str.lower().str.replace(" ","_")
+# emp["joining_date"]=pd.to_datetime(emp["joining_date"])
+# emp["salary"]=emp["salary"].str.strip().str.replace(",","").str.replace("₹","")
+# emp["salary"]=pd.to_numeric(emp["salary"])
+# emp["salary"]=emp["salary"].fillna(emp["salary"].median())
+# emp=emp.drop_duplicates()
+# emp["employee_name"]=emp["employee_name"].str.strip().str.title()
+# emp["city"]=emp["city"].replace({
+#     "Ahd":"Ahmedabad"
+# })
+# emp["gender"]=emp["gender"].replace({
+#    "M":"Male",
+#     "F":"Female"
+# })
+# emp["skills"]=emp["skills"].str.split(",")
+# emp=emp.explode("skills")
+#
+# customer.columns=customer.columns.str.strip().str.lower().str.replace(" ","_")
+# customer=customer.rename(columns={
+#     "customerid":"customer_id"
+# })
+# customer["city"]=customer["city"].replace({
+#     "Ahd":"Ahmedabad"
+# })
+#
+#
+# attendance.columns=attendance.columns.str.strip().str.lower().str.replace(" ","_")
+# attendance=attendance.rename(columns={
+#     "employeeid":"employee_id"
+# })
+# attendance["present_days"]=attendance["present_days"].fillna(attendance["present_days"].mean()).astype("int")
+# attendance["leave_days"]=attendance["leave_days"].fillna(attendance["leave_days"].mean()).astype("int")
+# attendance["month"]=pd.to_datetime(attendance["month"])
+# attendance=attendance.drop_duplicates()
+#
+# product.columns=product.columns.str.strip().str.lower().str.replace(" ","_")
+# product=product.rename(columns={
+#     "productid":"product_id"
+# })
+# product["base_price"]=product["base_price"].str.strip().str.replace(",","").str.replace("₹","")
+# product["base_price"]=pd.to_numeric(product["base_price"])
+# product["stock"]=product["stock"].fillna(product["stock"].mean())
+#
+# price_history.columns=price_history.columns.str.strip().str.lower().str.replace(" ","_")
+# price_history=price_history.rename(columns={
+#     'productid':"product_id",
+#     'pricetime':"price_time",
+#     'unitprice':"unit_price"
+# })
+# price_history["price_time"]=pd.to_datetime(price_history["price_time"])
+#
+# sale.columns=sale.columns.str.strip().str.lower()
+# sale=sale.rename(columns={
+#     'orderid':"order_id",
+#     'ordertime':"order_time",
+#     'employeeid':"employee_id",
+#     'customerid':"customer_id",
+#     'productid':"product_id",
+#     'salesamount':"sales_amount"
+# })
+# sale["order_time"]=pd.to_datetime(sale["order_time"])
+# sale["discount%"]=sale["discount%"].fillna(0)
+# sale=sale.drop_duplicates()
+#
+# target.columns=target.columns.str.strip().str.lower()
+# target["date"]=pd.to_datetime(target["date"])
+#
+# df=pd.merge(emp,attendance,on="employee_id",how="inner")
+# df=pd.merge(df,sale,on="employee_id",how="inner")
+# df=pd.merge(df,target,on="department",how="inner")
+# df=pd.merge(df,price_history,on="product_id",how="inner")
+# df=pd.merge(df,customer,on="customer_id",how="inner")
+# df=pd.merge(df,product,on="product_id",how="inner")
+#
+# df=df.rename(columns={
+#     "city_x":"employee_city",
+#     "city_y":"customer_city"
+# })
+#
+# print(df["skills"].value_counts().idxmax())
+# print(df.groupby("skills")["salary"].sum().nlargest(3)) #What are the top 3 skills by salary
+# print(df["skills"].value_counts().nsmallest(3))#What are the top 3 skills by rareness
+# print(df["skills"].nunique())
+# most_emp_python=df.query("skills=='Python'")
+# print(df.groupby("department")["skills"].count().idxmax())
+# print(df.groupby("employee_id")["skills"].nunique().idxmax())
+# print(df.pivot_table(index="department",columns="skills",values="salary",aggfunc="mean",fill_value=0))
+# print(pd.crosstab(index=df["department"],columns=df["skills"],normalize=True)*100)
+#
+# # Employee Analysis
+#
+# print(df["salary"].mean())
+# print(df["salary"].max())
+# print(df["salary"].min())
+# print(df["salary"].sum())
+# print(df["employee_id"].nunique())
+# print(df.groupby("department")["salary"].agg(["mean","max","min","sum","count"]))
+#
+#
+# df["department_average_salary"]=df.groupby("department")["salary"].transform("mean")
+# df["department_total_salary"]=df.groupby("department")["salary"].transform("sum")
+# df["salary_difference"]=df["salary"]-df["department_average_salary"]
+# df["salary_contribution_%"]=df["salary"]/df["department_total_salary"]*100
+# print(df.query("salary>`department_average_salary`"))
+#
+# df["salary_band"]=pd.cut(df["salary"],
+#                          bins=[68000,80000,100000,float("inf")],
+#                          labels=["Low","Medium","High"],include_lowest=True)
+# df["salary_quartile"]=pd.qcut(df["salary"],q=3,duplicates='drop',labels=["Q1","Q2","Q3"]) #if i wrote the 4 so show me this error: ValueError: Bin labels must be one fewer than the number of bin edges
+# print(df["salary_band"].value_counts().idxmax())
+# print(df.groupby("department")["salary"].mean().idxmax())
+# print(df.groupby("employee_city")["salary"].mean().idxmax())
+#
+# df["company_salary_rank"]=df["salary"].rank(ascending=False,method="dense")
+# df["department_salary_rank"]=df.groupby("department")["salary"].rank(ascending=False,method="dense")
+# emp_unique=df.drop_duplicates(subset="employee_id",keep="first")
+# print(emp_unique.nlargest(5,"salary"))
+# emp_unique=df.drop_duplicates(subset="employee_id",keep="first")
+# print(emp_unique[emp_unique["department_salary_rank"]==1])
+# print(emp_unique[emp_unique["department_salary_rank"]<=2])
+#
+# #customer analysis
+# #DO NOT NEEDS TO MERGE I ALREADY MERGE ALL
+# print(df["customer_id"].count())
+# print(df["customer_name"].unique())
+# print(df.groupby("customer_city")["customer_name"].count())
+# print(df.groupby("segment")["customer_name"].count())
+# print(df.groupby("customer_name")["sales_amount"].sum().nlargest(5))
+# print(df["customer_city"].value_counts().idxmax())
+# print(df.groupby("customer_city")["sales_amount"].sum().idxmax())
+# print(df.groupby("customer_name")["sales_amount"].sum()/df["sales_amount"].sum()*100)
+#
+# # Product Analysis
+#
+# df["total_sales"]=df["quantity"]*df["unit_price"]
+# print(df.groupby("product_id")["quantity"].count().idxmax())
+# print(df.groupby("product_id")["quantity"].count().idxmin())
+# print(df.groupby("product_id")["total_sales"].mean().idxmax())
+# print(df.groupby("product_id")["total_sales"].mean().idxmin())
+# print(df.groupby("category")["total_sales"].sum())
+# print(df.groupby("category")["quantity"].count())
+# print(df.groupby("category")["unit_price"].mean())
+# df["product_wise_rank"]=df.groupby("product_id")["total_sales"].rank(ascending=False,method="dense")
+#
+#
+# df["discount_amount"]=df["total_sales"]*df["discount%"]/100
+# df["net_sales"]=df["total_sales"]-df["discount_amount"]
+# print(df)
+# print(df["discount_amount"].nlargest(1))
+# print(df.groupby("product_id")["net_sales"].sum().idxmax())
+# print(df.groupby("product_id")["discount_amount"].mean())
+# print(df["discount_amount"].sum())
+# print(df["net_sales"].sum())
+#
+# print(df.pivot_table(index="department",columns="employee_city",values="salary",aggfunc="mean",fill_value=0))
+# print(df.pivot_table(index="category",columns="product_name",values="sales_amount",aggfunc="sum",fill_value=0))
+# print(df.pivot_table(index="department",columns="skills",values="employee_id",aggfunc="count",fill_value=0))
+#
+# print(pd.crosstab(index=df["department"],columns=df["gender"],normalize=True)*100)
+# print(pd.crosstab(index=df["department"],columns=df["skills"]))
+# print(pd.crosstab(index=df["customer_city"],columns=df["segment"]))
+#
+# melt_data = pd.melt(
+#     df,
+#     id_vars="employee_id",
+#     value_vars=["present_days", "leave_days"],
+#     var_name="attendance_status",
+#     value_name="days_count"
+# )
+#
+# print(melt_data)
+#
+# melt_data_unique = melt_data.drop_duplicates(subset=["employee_id", "attendance_status"], keep="first")
+#
+# pivot_data = melt_data_unique.pivot(
+#     index="employee_id",
+#     columns="attendance_status",
+#     values="days_count"
+# ).reset_index()
+#
+# print(pivot_data)
+#
+# #i may be do not use the good of melt and pivot
+#
+# print(df.corr(numeric_only=True))
+#
+# number_data = df.select_dtypes(["number"])
+# covariance_matrix = number_data.cov()
+# print(covariance_matrix)
+#
+#
+# print(df["salary"].corr(df["sales_amount"])) #-0.47100144643597247
+# df["attendance%"]=df["present_days"]/df['working_days']*100
+# print(df["attendance%"].corr(df["sales_amount"]))# -0.10511014447540605
+# print(df["quantity"].corr(df["sales_amount"]))# -0.3139563039850516
+# print(df["discount_amount"].corr(df["net_sales"])) #0.9626971209379639
+# # i did not learn stack and unstack so i can not answer this : strongest positive correlation.
+# # Strongest negative correlation.
+# # Weakest correlation.
+#
+# df["3day_rolling_average_sales"]=df["sales_amount"].rolling(3,min_periods=1).mean()
+# df["7day_rolling_average_sales"]=df["sales_amount"].rolling(7,min_periods=1).mean()
+# df["3day_rolling_total_sales"]=df["total_sales"].rolling(3,min_periods=1).sum()
+#
+# print(df.nlargest(1,"3day_rolling_average_sales"))
+# print(df.nlargest(1,"7day_rolling_average_sales"))
+# # Is sales performance improving?
+# # yes
+# # What happens if min_periods=1 is used?
+# #the nan values become the columns value as it is
+#
+# df["previous_sale"]=df["sales_amount"].shift(1)
+# df["next_sale"]=df["sales_amount"].shift(-1)
+# df["sale_different%"]=df["previous_sale"]-df["next_sale"]
+# print(df["previous_sale"].nlargest(1))
+# print(df["sale_different%"].nlargest(1))
+# print(df["sale_different%"].nsmallest(1))
+#
+# df["sales_growth_%"]=df["sales_amount"].pct_change()*100
+# print(df.nlargest(1,"sales_growth_%"))
+# print(df.nsmallest(1,"sales_growth_%"))
+# print(df["sales_growth_%"].mean())
+# print(df[df["sales_growth_%"]>0])
+#
+#
+# df["running_total_sales"]=df["total_sales"].expanding().sum()
+# df["running_average_sales"]=df["total_sales"].expanding().mean()
+# df["running_max_sales"]=df["total_sales"].expanding().max()
+# df["running_min_sales"]=df["total_sales"].expanding().min()
+# print(df)
+#
+# print(df.nlargest(1,"running_total_sales"))
+# print(df.nlargest(1,"running_average_sales"))
+# # Day on which cumulative sales first crossed ₹100,000.i can not find this
+#
+# # year
+# df["order_year"]=df["order_time"].dt.year
+# df["order_month"]=df["order_time"].dt.month
+# df["order_month_name"]=df["order_time"].dt.month_name()
+# df["order_quarter"]=df["order_time"].dt.quarter
+# df["order_day"]=df["order_time"].dt.day
+# df["order_day_name"]=df["order_time"].dt.day_name()
+# df["order_hour"]=df["order_time"].dt.hour
+# df["order_weekday"]=df["order_time"].dt.weekday
+# df["is_weekend"]=df["order_weekday"]>=5
+# # Best month.
+# # Best quarter.
+# # above both can not find because of the month and quarter are january and 1
+# print(df.groupby("order_weekday")["sales_amount"].sum().idxmax())
+# print(df["is_weekend"].corr(df["order_weekday"])) #0.807330000740084
+# print(df.groupby("order_hour")["sales_amount"].sum().idxmax())
+#
+# # i can not find the resample because of the data have for 1 month only
+# print(df)
+#
+# df.to_excel("final_project_internship_done.xlsx",index=False)
+
+#-------------------------------------------------------------------
+
+# import numpy as np
+# import pandas as pd
+
+# df= pd.DataFrame(
+#     {
+#         "Employee": [
+#             "  Rahul ",
+#             "Neha",
+#             "Amit",
+#             "Priya",
+#             "manthan",
+#             "Khushbu",
+#             "Jay",
+#             "Riya",
+#             "Amit",
+#             "ANANYA",
+#             "Vikram*",
+#             None,
+#         ],
+#         "Department": [
+#             "IT",
+#             "I.T.",
+#             "HR",
+#             "Human Resources",
+#             "Finance",
+#             "FINANCE",
+#             "Sales",
+#             "sales",
+#             "HR",
+#             "IT",
+#             "Marketing",
+#             "Sales",
+#         ],
+#         "City": [
+#             "Ahmedabad",
+#             "Surat ",
+#             "Ahmedabad",
+#             "surat",
+#             "Mumbai",
+#             "mumbai",
+#             "Ahmdabad",
+#             "Surat",
+#             "Ahmedabad",
+#             "Delhi",
+#             "Bangalore",
+#             "Mumbai",
+#         ],
+#         "Skills": [
+#             "Python,SQL,Excel",
+#             "Python/Power BI",
+#             "Excel;Tally",
+#             "Python,Excel",
+#             "Python, SQL",
+#             "Excel,Power BI",
+#             "Python,Excel,SQL",
+#             "Power BI",
+#             "Excel,Tally",
+#             "Java,,SQL",
+#             "SEO, Ads",
+#             np.nan,
+#         ],
+#         "Sales": [
+#             "1,00,000",
+#             140000,
+#             60000,
+#             80000,
+#             150000,
+#             "180000",
+#             120000,
+#             -140000,
+#             60000,
+#             "95k",
+#             200000,
+#             0,
+#         ],
+#         "Target": [
+#             90000,
+#             130000,
+#             70000,
+#             75000,
+#             140000,
+#             160000,
+#             110000,
+#             150000,
+#             70000,
+#             100000,
+#             np.nan,
+#             50000,
+#         ],
+#         "Salary": [
+#             60000,
+#             80000,
+#             55000,
+#             60000,
+#             90000,
+#             110000,
+#             75000,
+#             95000,
+#             55000,
+#             "N/A",
+#             120000,
+#             45000,
+#         ],
+#         "Rating": [
+#             4.2,
+#             4.6,
+#             3.2,
+#             3.8,
+#             4.8,
+#             4.9,
+#             4.1,
+#             4.5,
+#             3.2,
+#             "four",
+#             3.9,
+#             52.0,
+#         ],
+#     }
+# )
+
+# # print(df.info())
+# df.columns=df.columns.str.strip().str.lower()
+# df=df.rename(columns={
+#     "employee":"employee_name",
+# })
+# df["employee_name"]=df["employee_name"].str.strip().str.title().str.replace("*","").fillna("Unknown")
+# df["department"]=df["department"].str.strip().str.title().str.replace(".","")
+# df["department"]=df["department"].replace({
+#     "It":"IT",
+#     "Hr":"HR",
+#     "Human Resources":"HR"
+# }).astype("category")
+# df["city"]=df["city"].str.strip().str.title().replace({
+#     'Ahmdabad':'Ahmedabad',
+# }).astype("category")
+# df["skills"] = df["skills"].str.split(r"\s*[,;/]\s*")
+# df=df.explode("skills")
+# df["skills"]=df["skills"].str.replace({
+#     "Ads":"ADS"
+# }).fillna("Unknown").replace("", "Unknown")
+# df["sales"]=df["sales"].replace({
+#     '1,00,000':"100000",
+#     "95k":"95000",
+# })
+
+# df["sales"]=df["sales"].astype("str").str.replace("-","")
+# df["sales"]=pd.to_numeric(df["sales"],errors="coerce")
+# df["target"]=df["target"].fillna(df["target"].median()).astype("int")
+# df["salary"]=df["salary"].replace("N/A",np.nan).astype("float")
+# df["salary"]=df["salary"].fillna(df["salary"].mean()).round(2)
+# df["rating"]=df["rating"].astype("str").replace({
+#     "four":np.nan,
+#     "52.0":np.nan
+#     }).astype("float")
+# df["rating"]=df["rating"].fillna(df["rating"].mean()).round(2)
+# df=df.drop_duplicates()
+# # print(df.columns)
+# # print(df.dtypes)
+# # print(df.isna().sum())
+# # print(df.duplicated().sum())
+# df["achievement_%"]=df["sales"]/df["target"]*100
+# df["target_status"]=np.where(df["achievement_%"]>=100,"Achieved","Not Achieved")
+# df["department_average_sales"]=df.groupby("department")["sales"].transform("mean")
+# df["department_salary_rank"]=df.groupby("department")["salary"].rank(ascending=False,method="dense")
+# print(df[["employee_name","salary"]])
+# df["salary_category"]=pd.cut(df["salary"],bins=[0,75000,100000,float("inf")],labels=["Low","Medium","High"],include_lowest=True)
+# print(df)
+# df_1=df.groupby("department").filter(lambda x:x["sales"].mean()>100000 and x["rating"].mean()>=4)
+# print(df_1)
+# print(df["skills"].value_counts().idxmax())
+# print(df["skills"].nunique())
+# print(df["skills"].value_counts().nlargest(3)) #value_counts the sort by the large to small so top 3 is easy
+
+# print(df.pivot_table(index="department",columns="city",values="sales",aggfunc="sum",fill_value=0))
+
+# print(df.nlargest(2,"sales"))
+# print(df.groupby("department")["sales"].sum().idxmax())
+# print(df.nlargest(1,"achievement_%"))
+# df=df.sort_values("sales",ascending=False)
+# df["previous_sales"]=df["sales"].shift(1)
+# df["sales_growth_%"]=df["sales"].pct_change()*100
+# df["running_total_sales"]=df["sales"].expanding().mean()
+# df["rolling_average_3days"]=df["sales"].rolling(3,min_periods=1).mean()
+# print(df)
+# print(df_1.nlargest(1,"salary"))
+# df.to_excel("questions_16_8_final.xlsx",index=False)
+
+#--------------------------------------------------------------
 
 
+# import pandas as pd
+# import numpy as np
 
+# df = pd.DataFrame({
+#     "Employee": [
+#         " Rahul ", "Neha", "Amit", "Priya",
+#         "Manthan", "Khushbu", "Jay", "Riya"
+#     ],
+#     "Department": [
+#         "IT", "I.T.", "HR", "Human Resources",
+#         "Finance", "FINANCE", "Sales", "sales"
+#     ],
+#     "City": [
+#         "Ahmedabad", "Surat ", "Ahmedabad", "surat",
+#         "Mumbai", "mumbai", "Ahmdabad", "Surat"
+#     ],
+#     "Skills": [
+#         "Python,SQL,Excel",
+#         "Python/Power BI",
+#         "Excel;Tally",
+#         "Python,Excel",
+#         "Python, SQL",
+#         "Excel,Power BI",
+#         "Python,Excel,SQL",
+#         "Power BI"
+#     ],
+#     "Sales": [
+#         "1,00,000", 140000, 60000, 80000,
+#         150000, "180000", 120000, -140000
+#     ],
+#     "Target": [
+#         90000, 130000, 70000, 75000,
+#         140000, 160000, 110000, 150000
+#     ],
+#     "Salary": [
+#         60000, 80000, 55000, 60000,
+#         90000, 110000, 75000, 95000
+#     ],
+#     "Rating": [
+#         4.2, 4.6, 3.2, 3.8,
+#         4.8, 4.9, 4.1, 4.5
+#     ]
+# })
+# # print(df.head())
+# # print(df.tail())
+# # print(df.info())
+# # print(df.describe())
+# # print(df.columns)
+# # print(df.dtypes)
+# # print(df.shape)
+# # print(df.isna().sum())
+# # print(df.duplicated().sum())
+
+# df.columns=df.columns.str.strip().str.lower()
+# df=df.rename(columns={
+#     "employee":"employee_name",
+# })
+# df["employee_name"]=df["employee_name"].str.strip().str.title()
+# df["department"]=df["department"].str.strip().str.title().replace({
+#     "It":"IT",
+#     "I.T.":"IT",
+#     "Hr":"HR",
+#     "Human Resources":"HR"
+# })
+# df["city"]=df["city"].str.strip().str.title().replace({
+#     "Ahmdabad":"Ahmedabad"
+# })
+# df["skills"]=df["skills"].str.strip().str.title()
+# df["skills"] = df["skills"].str.split(r"\s*[,;/]\s*")
+# df=df.explode("skills")
+# df["sales"]=df["sales"].astype(str).str.replace(",","").astype(int)
+# df["sales"]=np.where(df["sales"]<0,0,df["sales"])
+# print(df["sales"])
+# print(df["skills"].value_counts().idxmax())
+# print(df["skills"].value_counts().head(3))
+# print(df["skills"].nunique())
+# python_users=df.query("skills=='Python'")
+# print(python_users)
+# print(python_users["department"].value_counts().idxmax())
+# df["achievement_%"]=df["sales"]/df["target"]*100
+# df["target_status"]=np.where(df["achievement_%"]>=100,"Achieved","Not Achieved")
+# print(df)
+# print(df.where(df["achievement_%"]>=100))
+# print(df.query("`achievement_%`>=100"))
+
+# df["department_average_sales"]=df.groupby("department")["sales"].transform("mean")
+# df["average_above"]=np.where(df["sales"]>df["department_average_sales"],"Above","Below")
+# df["department_salary_rank"]=df.groupby("department")["salary"].rank(ascending=False,method="dense")
+# print(df.query("department_salary_rank==1"))
+# df["salary_category"]=pd.cut(df["salary"],
+#     bins=[0,75000,100000,float("inf")],
+#     labels=["Low","Medium","High"]
+#                              )
+# print(df)
+# filter_department=df.groupby("department").filter(lambda x:x["sales"].mean()>100000 and x["rating"].mean()>=4)
+# print(filter_department)
+# print(filter_department.nlargest(1,"salary"))
+# print(df.pivot_table(index="department",columns="city",values="sales",aggfunc="sum",fill_value=0))
+
+# sales_df=df.drop_duplicates(subset=["employee_name"])
+# print(sales_df.nlargest(2,"sales"))
+# print(df.nlargest(1,"achievement_%"))
+# print(df.groupby("department")["sales"].sum().idxmax())
+# print(df["skills"].value_counts().idxmax())
+# print(df.nlargest(1,"salary"))
+
+
+# monthly_sales = pd.Series(
+#     [100000, 120000, 150000, 180000, 200000],
+#     index=["Jan", "Feb", "Apr", "Jun", "Jul"]
+# )
+# monthly_sales=monthly_sales.reindex(index=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],fill_value=0)
+# print(monthly_sales)
+# print(monthly_sales.sum())
+# print(monthly_sales.idxmax())
+# print(monthly_sales.expanding().sum())
+# print(monthly_sales.rolling(3,min_periods=1).mean())
+
+# try:
+#     df.to_excel(
+#     "final_pandas_revision_project_17_08.xlsx",
+#     index=False
+#     )
+# except Exception as e:
+#     print(e)
+
+# 🐛 Debugging Challenge
+
+# A junior developer writes:
+
+# df["achievement_%"] = (
+#     df["sales"] / df["target"] * 100
+# )
+
+# df["status"] = np.where(
+#     df["achievement_%"] > 100,
+#     "Achieved",
+#     "Not Achieved"
+# )
+
+# Find the business logic error.
+
+# An employee with exactly 100% achievement should be considered successful.
+
+# Fix the code:
+# df["achievement_%"] = (
+#     df["sales"] / df["target"] * 100
+# )
+
+# df["status"] = np.where(
+#     df["achievement_%"] >= 100,
+#     "Achieved",
+#     "Not Achieved"
+# )
+# 🔎 Trace Challenge
+
+# Predict the result:
+
+# s = pd.Series(
+#     [100, 200, 300],
+#     index=["Jan", "Mar", "May"]
+# )
+
+# result = s.reindex(
+#     ["Jan", "Feb", "Mar", "Apr", "May"],
+#     method="ffill"
+# )
+
+# print(result)
+
+# What are the values of:
+
+# Feb:100
+# Apr:200
+
+
+# 🧠 Thinking Question
+
+# You have an employee whose:
+
+# Sales = 0
+# Target = 100000
+
+# Should the company classify this employee as:
+
+# Achieved
+
+# or
+
+# Not Achieved
+
+# and why?
+# not achieved because of the because of it is negitive then you convert in to the 0 so not achieved
+
+#-----------------------------------------------------------------------------
+import pandas as pd
+import numpy as np
+try:
+    df=pd.read_csv("messy_data_practice_17_08.csv")
+except Exception as e:
+    print(e)
+print(df.head())
+print(df.tail())
+print(df.sample(10))
+print(df.info())
+print(df.columns)
+print(df.dtypes)
+print(df.isna().sum())
+print(df.duplicated().sum())
+df["name"]=df["name"].str.strip().str.title()
+df["age"]=pd.to_numeric(df["age"],errors="coerce")
+df["age"]=np.where(df["age"]>100,np.nan,df["age"])
+df["age"]=df["age"].fillna(df["age"].mean()).astype(int)
+df["gender"]=df["gender"].str.strip().str.title().replace({
+    "M":"Male",
+    "F":"Female"
+})
+df["city"]=df["city"].str.strip().str.title()
+df["email"]=df["email"].str.strip().str.lower().replace({
+      'isha@gmail':"isha@gmail.com",
+      'rahul@gmail':"rahul@gmail.com"
+}).fillna("Unkonwn")
+df["phone"]=df["phone"].str.strip().str.replace(" ","")
+df["phone"]=pd.to_numeric(df["phone"],errors="coerce")
+df["phone"]=df["phone"].fillna(df["phone"].median()).astype(int)
+df["purchase_date"]=pd.to_datetime(df["purchase_date"],format="mixed")
+df["quantity"]=df["quantity"].fillna(0)
+df["quantity"]=np.where(df["quantity"]<0,0,df["quantity"]).astype("int")
+df["price"]=df["price"].str.strip().str.replace(",","").astype("float")
+df["total_amount"]=df["total_amount"].str.strip().str.replace(",","")
+df["total_amount"]=pd.to_numeric(df["total_amount"],errors="coerce")
+df["total_amount"]=np.where(df["total_amount"]<0,0,df["total_amount"])
+df["total_amount"]=df["total_amount"].fillna(df["total_amount"].mean())
+df["payment_method"]=df["payment_method"].str.strip().str.title()
+df["returned"]=df["returned"].str.strip().str.title().replace({
+    "N":"No",
+    "Y":"Yes"
+})
+print(df)
+df.to_excel("practice_final_17_8.xlsx",index=False)

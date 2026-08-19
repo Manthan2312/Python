@@ -1,0 +1,32 @@
+customer_id,name,gender,age,city,email,signup_date
+C001,Rahul Sharma,Male,24,Ahmedabad,rahul@gmail.com,2024-01-15
+C002,Priya Patel,Female,29,Ahmedabad,priya.patel@gmail.com,15/02/2024
+C003,Amit Shah,M,31,Surat,amit@gmail.com,2024/03/10
+C004,Neha Mehta,Female,,Vadodara,neha@gmail.com,2024-03-22
+C005,rohit kumar,Male,45,Ahmedabad,rohit@gmail.com,2024-04-01
+C006,Anjali Desai,F,27,surat,anjali@gmail.com,2024-04-12
+C007,Vikas Singh,Male,19,Rajkot,,2024-05-05
+C008,Meena Joshi,Female,35,Ahmedabad,meena@gmail.com,2024-05-18
+C009,Arjun Patel,Male,42,Vadodara,arjun@gmail.com,2024-06-01
+C010,Pooja Shah,Female,28,Ahmedabad,pooja@gmail.com,01-06-2024
+C011,Rakesh Patel,M,33,Surat,rakesh@gmail.com,2024-06-15
+C012,Simran Kaur,Female,26,Ahmedabad,simran@gmail.com,2024-07-01
+C013,Manish Verma,Male,52,Rajkot,manish@gmail.com,2024-07-12
+C014,Kavita Rao,Female,41,Vadodara,kavita@gmail.com,2024-07-20
+C015,Sanjay Gupta,Male,30,Ahmedabad,sanjay@gmail.com,2024-08-02
+C016,Riya Shah,Female,23,Surat,riya@gmail.com,2024-08-14
+C017,Deepak Joshi,Male,,Ahmedabad,deepak@gmail.com,2024-08-25
+C018,Nisha Patel,Female,37,VADODARA,nisha@gmail.com,2024-09-01
+C019,Jay Mehta,Male,29,Ahmedabad,jay@gmail.com,2024-09-12
+C020,Komal Shah,Female,25,Surat,komal@gmail.com,2024-09-30
+C020,Komal Shah,Female,25,Surat,komal@gmail.com,2024-09-30
+C021,Harsh Patel,Male,22,Ahmedabad,harsh@gmail.com,2024-10-05
+C022,Divya Joshi,Female,34,Rajkot,divya@gmail.com,2024-10-19
+C023,Akash Shah,Male,39,Ahmedabad,akash@gmail.com,2024-11-02
+C024,,Female,31,Surat,missing@gmail.com,2024-11-15
+C025,Mihir Patel,Male,999,Ahmedabad,mihir@gmail.com,2024-11-22
+C026,Tina Shah,Female,28,Ahmedabad,tina@gmail.com,
+C027,Parth Mehta,Male,26,Surat,parth@gmail.com,2024-12-03
+C028,Ayesha Khan,Female,30,Ahmedabad,ayesha@gmail.com,2024-12-10
+C029,Nitin Shah,Male,44,Rajkot,nitin@gmail.com,2024-12-18
+C030,Hetal Patel,Female,32,Ahmedabad,hetal@gmail.com,2025-01-05

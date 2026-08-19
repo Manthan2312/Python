@@ -9,7 +9,7 @@ def my_function():
 
 
 my_function()
-#print(y) #THROWING THE ERROR BECAUSE OF Y IS IN THE FUNCTION SO THAT IS 
+#print(y) #THROWING THE ERROR BECAUSE OF Y IS IN THE FUNCTION SO THAT IS
 #CONSIDER AS A LOCAL SCOPE VARIABLE
 
 
@@ -33,7 +33,7 @@ count=0
 def increment():
     # global count  #if we use global keyword that
     count+=1
-    
+
     print(count) #THROWING THE ERROR BECAUSE OF count IS IN THE GLOBAL SCOPE
 
 

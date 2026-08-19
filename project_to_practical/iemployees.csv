@@ -1,0 +1,10 @@
+Employee ID,Employee Name,Department,City,Gender,Joining Date,Salary,Skills
+101, rahul patel ,IT,Ahd,M,2024-01-15,"₹75,000","Python,SQL,Excel"
+102,Neha Shah,IT,Surat,F,2023-03-10,82000,"Excel,Power BI"
+103,Amit Mehta,HR,Ahmedabad,M,2022-06-20,,"Python,Pandas"
+104,Priya Desai,HR,Mumbai,F,2021-08-05,"95,000","Excel,Tally"
+105,Manthan Patel,Finance,Ahd,M,2024-02-12,"1,10,000","Python,SQL"
+106,Khushbu Patel,Finance,Surat,F,2020-11-18,68000,"Excel,Power BI"
+107,Jay Shah,Sales,Mumbai,M,2023-07-01,72000,"Python,Excel,Power BI"
+108,Riya Mehta,Sales,Ahmedabad,F,2022-09-14,88000,"SQL,Excel"
+102,Neha Shah,IT,Surat,F,2023-03-10,82000,"Excel,Power BI"

@@ -1,0 +1,14 @@
+ProjectID,EmpID,ProjectName,StartDate,EndDate,Status
+P101,101,Inventory System,2022-02-01,2022-10-30,Completed
+P102,102,HR Dashboard,2021-08-01,2022-01-15,Completed
+P103,103,Finance Tracker,2023-02-15,2023-11-20,Completed
+P104,104,Sales Forecast,2020-10-01,2021-08-30,Completed
+P105,105,Marketing Analytics,2022-12-01,,Ongoing
+P106,106,Budget Planner,2021-05-01,2022-02-28,Completed
+P107,107,AI Assistant,2019-07-10,,Ongoing
+P108,108,Employee Survey,2023-08-20,2024-02-15,Completed
+P109,109,CRM Dashboard,2022-06-01,,Ongoing
+P110,110,Automation Tool,2021-01-10,2022-03-25,Completed
+P111,112,Risk Analysis,2023-04-01,,Ongoing
+P112,115,Vision AI,2024-02-01,,Ongoing
+P113,999,Unknown Project,2023-01-01,,Ongoing

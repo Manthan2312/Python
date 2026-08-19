@@ -1,0 +1,7 @@
+customer_id,customer_name,city,segment
+C001,Aarav Patel,Ahmedabad,Premium
+C002,Priya Shah,Surat,Regular
+C003,Rohan Mehta,Vadodara,Premium
+C004,Neha Joshi,Rajkot,Regular
+C005,Vikram Desai,,Premium
+C006,Kavya Trivedi,Bhavnagar,VIP

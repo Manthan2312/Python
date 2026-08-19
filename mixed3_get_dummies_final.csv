@@ -1,0 +1,6 @@
+employee_id,name,salary,sales,target,working_days,present_days,attendance_%,achievement_%,target_status,salary_band,department_Finance,department_HR,department_IT,department_Sales,city_Ahmedabad,city_Mumbai,city_Surat
+101,Rahul,60000,100000,90000,22,21,95.45454545454545,111.11111111111111,Achievement,Low,0,0,1,0,1,0,0
+102,Neha,70000,80000,100000,22,20,90.9090909090909,80.0,Not Achievement,Low,0,1,0,0,0,0,1
+103,Amit,90000,150000,140000,22,22,100.0,107.14285714285714,Achievement,Medium,1,0,0,0,0,1,0
+104,Priya,80000,120000,100000,22,19,86.36363636363636,120.0,Achievement,Low,0,0,1,0,1,0,0
+105,Manthan,110000,180000,160000,22,21,95.45454545454545,112.5,Achievement,High,0,0,0,1,0,0,1

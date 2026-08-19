@@ -1,0 +1,17 @@
+employee_id,Employee_Name,dept_name,Gender,City,joining_date,Salary
+EMP001,Alice Smith,IT,Female,New York,2023-02-01,85000.0
+EMP002,Bob Jones,it,M,Chicago,2023-12-31,92000.0
+EMP003,Charlie Brown,Finance,Male,Los Angeles,2022-05-11,
+EMP004,Diana Prince,FINANCE,F,,2023-07-19,110000.0
+EMP005,Evan Wright,HR,Male,Chicago,2023-02-05,65000.0
+EMP006,Fiona Gallagher,Human Resources,Female,New York,2023-01-01,72000.0
+EMP007,George Clark,IT,m,San Francisco,2022-11-11,125000.0
+EMP008,Hannah Abbott,Sales,f,Los Angeles,2021-08-25,
+EMP009,Ian Malcolm,SALES,Male,New York,2024-03-14,95000.0
+EMP010,Julia Roberts,HR,Female,,2020-05-20,58000.0
+EMP011,Kevin Bacon,Finance,MALE,Chicago,2021-11-02,105000.0
+EMP012,Laura Croft,IT,FEMALE,San Francisco,2022-09-18,88000.0
+EMP013,Michael Scott,Sales,Male,New York,2020-04-01,130000.0
+EMP014,Nina Simone,IT,Female,Los Angeles,2023-06-15,67000.0
+EMP015,Oscar Wilde,HR,Male,Chicago,2021-07-22,99000.0
+EMP005,Evan Wright,IT,Male,Chicago,2023-02-05,65000.0

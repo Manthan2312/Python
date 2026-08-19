@@ -1,0 +1,16 @@
+EmpID,Name,Department,Salary,JoinDate,Projects
+101,Aarav,IT,75000,2022-01-15,"Python,SQL"
+102,Diya,HR,52000,2021-07-20,"Excel,Power BI"
+103,Vivaan,Finance,68000,2023-02-10,"Excel,SQL"
+104,Anaya,IT,88000,2020-09-12,"Python,Pandas,SQL"
+105,Krish,Marketing,61000,2022-11-05,"Excel,Power BI"
+106,Saanvi,Finance,,2021-04-18,"Python,SQL"
+107,Aditya,IT,92000,2019-06-25,"Python,Pandas,Machine Learning"
+108,Myra,HR,55000,2023-08-11,"Excel"
+109,Rohan,Marketing,63000,2022-05-16,"SQL,Power BI"
+110,Ishita,IT,87000,2020-12-30,"Python,SQL,Power BI"
+111,Aarav,IT,75000,2022-01-15,"Python,SQL"
+112,Kabir,Finance,70000,2023-03-21,"Python,Pandas"
+113,Kiara,HR,50000,2021-09-19,
+114,Arjun,Marketing,59000,2022-10-10,"Excel,SQL"
+115,Meera,IT,91000,2024-01-08,"Python,AI,Machine Learning"

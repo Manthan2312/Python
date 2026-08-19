@@ -1,0 +1,22 @@
+employee_id,employee_name,department,city,sale_date,sales,revenue,price,status,manager,bonus
+101,Alice,Electronics,New York,2024-01-03,120,1500,45,Active,John,200
+102,Bob,Furniture,Chicago,2024-01-05,90,1200,38,Active,Sarah,150
+103,Charlie,Electronics,New York,2024-01-08,150,2100,47,Inactive,John,
+104,David,Grocery,Houston,2024-01-10,,900,25,Active,Mike,100
+105,Eva,Furniture,Chicago,2024-01-12,110,1600,39,Active,Sarah,180
+106,Frank,Grocery,Dallas,2024-01-15,80,850,24,Inactive,Mike,90
+107,Grace,Electronics,Boston,2024-01-17,170,2500,49,Active,John,250
+108,Henry,Furniture,Dallas,2024-01-20,95,1300,40,Active,Sarah,160
+109,Ivy,Grocery,Houston,2024-01-22,105,980,26,Active,Mike,
+110,Jack,Electronics,Boston,2024-01-25,160,2300,50,Inactive,John,220
+111,Karen,Furniture,Chicago,2024-01-28,115,1700,41,Active,Sarah,190
+112,Liam,Grocery,Dallas,2024-01-30,88,870,24,Active,Mike,95
+113,Mia,Electronics,New York,2024-02-02,175,2600,52,Active,John,270
+114,Noah,Furniture,Houston,2024-02-05,98,1350,42,Inactive,Sarah,170
+115,Olivia,Grocery,Boston,2024-02-07,108,1000,27,Active,Mike,110
+116,Peter,Electronics,Chicago,2024-02-10,180,2750,53,Active,John,300
+117,Quinn,Furniture,New York,2024-02-12,120,1800,43,Active,Sarah,200
+118,Rachel,Grocery,Dallas,2024-02-15,92,910,25,Inactive,Mike,100
+119,Steve,Electronics,Houston,2024-02-18,185,2850,54,Active,John,320
+120,Tina,Furniture,Boston,2024-02-20,125,1850,44,Active,Sarah,210
+120,Tina,Furniture,Boston,2024-02-20,125,1850,44,Active,Sarah,210

@@ -1,0 +1,7 @@
+ProductID,Product Name,Category,Base Price,Stock
+301,Laptop,Electronics,"₹50,000",10.0
+302,Mouse,Accessories,700,50.0
+303,Keyboard,Accessories,"1,200",
+304,Monitor,Electronics,"12,000",15.0
+305,Headset,Accessories,"2,500",30.0
+306,Printer,Electronics,"15,000",8.0

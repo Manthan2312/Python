@@ -1,0 +1,32 @@
+Employee_Name, Dept ,City,Join_Date,Sales,Previous_Sales,Salary
+ Alice Smith ,Sales,New York,2026-01-01,25795.0,23215.5,112995.0
+Bob Jones,Engineering,San Francisco,2026-01-02,10860.0,11946.0,100757.0
+ Charlie Brown,Marketing,Chicago,2026-01-03,48158.0,43342.2,69692.0
+Diana Prince ,HR,Boston,2026-01-04,21284.0,23412.4,105758.0
+Evan Wright,Finance,Austin,2026-01-05,,17891.5,66873.0
+Fiona Gallagher,Engneering,New York,2026-01-06,26850.0,24165.0,65675.0
+ George Clark,Engineering,San Francisco,2026-01-07,47194.0,42474.6,60161.0
+Hannah Abbott,Marketing,Chicago,2026-01-08,31962.0,35158.2,97065.0
+Ian Malcolm,HR,Boston,2026-01-09,26023.0,26023.0,86557.0
+Julia Roberts ,Finance,Austin,2026-01-10,11685.0,10516.5,93763.0
+ Alice Smith ,Sales,New York,2026-01-11,10769.0,10769.0,
+Bob Jones,Engineering,San Francisco,2026-01-12,12433.0,12433.0,71534.0
+Bob Jones,Marketing,Chicago,2026-01-13,15311.0,15311.0,89127.0
+Diana Prince ,HR,Boston,2026-01-14,47819.0,43037.1,100397.0
+Evan Wright,Finance,Austin,2026-01-15,49188.0,49188.0,85851.0
+Fiona Gallagher,Sales,New York,2026-01-16,27568.0,24811.2,61016.0
+ George Clark,Engineering,San Francisco,2026-01-17,29769.0,29769.0,84253.0
+Hannah Abbott,Marketing,Chicago,2026-01-18,38693.0,42562.3,115591.0
+Ian Malcolm,HR,Boston,2026-01-19,16396.0,18035.6,84276.0
+Julia Roberts ,Finance,Austin,2026-01-20,37480.0,33732.0,83247.0
+ Alice Smith ,Sales,New York,2026-01-21,35658.0,39223.8,84300.0
+Bob Jones,Engineering,San Francisco,2026-01-22,17621.0,19383.1,64386.0
+Charlie Brown,Marketing,Chicago,2026-01-23,17805.0,17805.0,101886.0
+Diana Prince ,HR,Boston,2026-01-24,37485.0,37485.0,85966.0
+Evan Wright,Finance,Austin,2026-01-25,23354.0,21018.6,83709.0
+Fiona Gallagher,Sales,New York,2026-01-26,45620.0,50182.0,119330.0
+ George Clark,Engineering,San Francisco,2026-01-27,47672.0,42904.8,114343.0
+Hannah Abbott,Marketing,Chicago,2026-01-28,49516.0,44564.4,106735.0
+Ian Malcolm,HR,Boston,2026-01-29,33139.0,36452.9,94980.0
+Julia Roberts ,Finance,Austin,2026-01-30,48821.0,48821.0,119022.0
+ Alice Smith ,Sales,New York,2026-01-01,25795.0,23215.5,112995.0
